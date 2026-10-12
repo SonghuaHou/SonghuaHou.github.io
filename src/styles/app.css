@@ -226,6 +226,7 @@ a.work-item:hover .work-thumb--text { transform: scale(1.02); }
 
 /* ---------- 页脚（简化） ---------- */
 .ft { border-top: 1px solid var(--line); margin-top: 60px; padding: 36px 0 48px; color: var(--soft); font-size: 14px; }
+.ft .caption { color: var(--soft); }
 .ft-row { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
 .ft a { color: var(--soft); }
 .ft a:hover { color: var(--text); }
