@@ -3,7 +3,7 @@ import Base from "../../../layouts/Base.astro";
 import Topbar from "../../../components/Topbar.astro";
 import SiteFooter from "../../../components/SiteFooter.astro";
 import { site } from "../../../lib/site";
-const w = site.writing[0];
+const w = site.writing.find((x) => x.href === "/writing/quantifying-better-self/")!;
 ---
 <Base page="writing" title={`${site.name} — ${w.title_en}`}>
   <Topbar path="/writing/" />

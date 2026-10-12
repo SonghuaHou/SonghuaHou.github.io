@@ -3,7 +3,7 @@ import Base from "../../../layouts/Base.astro";
 import Topbar from "../../../components/Topbar.astro";
 import SiteFooter from "../../../components/SiteFooter.astro";
 import { site } from "../../../lib/site";
-const w = site.design[3];
+const w = site.design.find((x) => x.href === "/design/yi-yi/")!;
 ---
 <Base page="design" title={`${site.name} — ${w.title_zh}`}>
   <Topbar path="/design/" />

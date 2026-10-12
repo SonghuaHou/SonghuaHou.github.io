@@ -139,8 +139,9 @@ LIANGSHAN = re.sub(
 ZH_REFS_HEAD = '<h2>参考文献</h2>'
 
 # ---------- page templates ----------
-def design_page(slug, idx, images, alts):
+def design_page(slug, images, alts):
     (SRC / 'design' / slug).mkdir(parents=True, exist_ok=True)
+    href = f'/design/{slug}/'
     figs = '\n'.join(
         f'          <figure>\n            <img src="/assets/{img}" alt="{alt}" loading="lazy" />\n          </figure>'
         for img, alt in zip(images, alts))
@@ -149,7 +150,7 @@ import Base from "../../../layouts/Base.astro";
 import Topbar from "../../../components/Topbar.astro";
 import SiteFooter from "../../../components/SiteFooter.astro";
 import {{ site }} from "../../../lib/site";
-const w = site.design[{idx}];
+const w = site.design.find((x) => x.href === "{href}")!;
 ---
 <Base page="design" title={{`${{site.name}} — ${{w.title_zh}}`}}>
   <Topbar path="/design/" />
@@ -172,8 +173,9 @@ const w = site.design[{idx}];
 </Base>
 """
 
-def blog_page(section, page, slug, idx, en_primary, body_html, refs_html='', extra_head=''):
+def blog_page(section, page, slug, en_primary, body_html, refs_html='', extra_head=''):
     (SRC / section / slug).mkdir(parents=True, exist_ok=True)
+    href = f'/{section}/{slug}/'
     title_p, title_s = (f'w.title_en', f'w.title_zh') if en_primary else (f'w.title_zh', f'w.title_en')
     venue_p = 'w.venue_en' if en_primary else 'w.venue_zh'
     det_p, det_s = ('w.detail_en', 'w.detail_zh') if en_primary else ('w.detail_zh', 'w.detail_en')
@@ -182,7 +184,7 @@ import Base from "../../../layouts/Base.astro";
 import Topbar from "../../../components/Topbar.astro";
 import SiteFooter from "../../../components/SiteFooter.astro";
 import {{ site }} from "../../../lib/site";
-const w = site.{section}[{idx}];
+const w = site.{section}.find((x) => x.href === "{href}")!;
 ---
 <Base page="{page}" title={{`${{site.name}} — ${{{title_p}}}`}}>
   <Topbar path="/{section}/" />
@@ -211,23 +213,23 @@ pages = {}
 
 # --- 4 keynote detail pages ---
 pages['design/introducing-journalism/index.astro'] = design_page(
-    'introducing-journalism', 0,
+    'introducing-journalism',
     ['jy-xinwen-1.webp', 'jy-xinwen-2.webp', 'jy-xinwen-3.webp'],
     ['新闻传播学讲演配图 1', '新闻传播学讲演配图 2', '新闻传播学讲演配图 3'])
 pages['design/housing-reform-40-years/index.astro'] = design_page(
-    'housing-reform-40-years', 1,
+    'housing-reform-40-years',
     ['jy-fangdichan-1.webp', 'jy-fangdichan-2.webp', 'jy-fangdichan-3.webp', 'jy-fangdichan-4.webp'],
     ['房地产改革讲演配图 1', '房地产改革讲演配图 2', '房地产改革讲演配图 3', '房地产改革讲演配图 4'])
 pages['design/resurrection/index.astro'] = design_page(
-    'resurrection', 2,
+    'resurrection',
     ['jy-fuhuo-1.webp', 'jy-fuhuo-2.webp', 'jy-fuhuo-3.webp', 'jy-fuhuo-4.webp'],
     ['复活讲演配图 1', '复活讲演配图 2', '复活讲演配图 3', '复活讲演配图 4'])
 pages['design/yi-yi/index.astro'] = design_page(
-    'yi-yi', 3,
+    'yi-yi',
     ['jy-yiyi-1.webp', 'jy-yiyi-2.webp', 'jy-yiyi-3.webp'],
     ['一一培训配图 1', '一一培训配图 2', '一一培训配图 3'])
 pages['design/drama-festival-poster/index.astro'] = design_page(
-    'drama-festival-poster', 4, ['poster-drama-festival.webp'], ['青岛二中第十届戏剧节海报'])
+    'drama-festival-poster', ['poster-drama-festival.webp'], ['青岛二中第十届戏剧节海报'])
 
 # --- zine page: 14 page images + statement + refs ---
 zfigs = '\n'.join(
@@ -244,7 +246,7 @@ import Base from "../../../layouts/Base.astro";
 import Topbar from "../../../components/Topbar.astro";
 import SiteFooter from "../../../components/SiteFooter.astro";
 import {{ site }} from "../../../lib/site";
-const w = site.writing[0];
+const w = site.writing.find((x) => x.href === "/writing/quantifying-better-self/")!;
 ---
 <Base page="writing" title={{`${{site.name}} — ${{w.title_en}}`}}>
   <Topbar path="/writing/" />
@@ -267,13 +269,13 @@ const w = site.writing[0];
 
 # --- 3 text blog pages ---
 pages['writing/re-rendering-cinema/index.astro'] = blog_page(
-    'writing', 'writing', 're-rendering-cinema', 1, True, STMT_BODY, STMT_REFS)
+    'writing', 'writing', 're-rendering-cinema', True, STMT_BODY, STMT_REFS)
 pages['writing/recurrent-cycle-of-piracy/index.astro'] = blog_page(
-    'writing', 'writing', 'recurrent-cycle-of-piracy', 2, True, AIGC_BODY, AIGC_REFS)
+    'writing', 'writing', 'recurrent-cycle-of-piracy', True, AIGC_BODY, AIGC_REFS)
 epigraph = ('        <p class="article-lede">“农村教育并没有提供观念，而只是观念的对象。”</p>\n'
             '        <p class="article-lede zh">—— 林小英《县中的孩子》</p>\n')
 pages['writing/objects-of-concepts/index.astro'] = blog_page(
-    'writing', 'writing', 'objects-of-concepts', 3, False, LIANGSHAN, '', epigraph)
+    'writing', 'writing', 'objects-of-concepts', False, LIANGSHAN, '', epigraph)
 
 # --- 2 video pages ---
 def video_page(slug, href, en_primary, mp4, poster):
