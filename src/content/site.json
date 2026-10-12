@@ -1,0 +1,331 @@
+{
+  "name": "Songhua Hou",
+  "role": "King's College London",
+  "email": "songhua_hou@outlook.com",
+  "year": "2026",
+  "socials": [
+    {
+      "label": "GitHub",
+      "href": "https://github.com/SonghuaHou"
+    }
+  ],
+  "nav": [
+    {
+      "label": "About",
+      "zh": "关于",
+      "href": "/"
+    },
+    {
+      "label": "Writing",
+      "zh": "写作",
+      "href": "/writing/"
+    },
+    {
+      "label": "Design",
+      "zh": "设计",
+      "href": "/design/"
+    },
+    {
+      "label": "Visual Media",
+      "zh": "视觉媒体",
+      "href": "/visual-media/"
+    }
+  ],
+  "about": {
+    "photo": "/assets/portrait.webp",
+    "name_zh": "侯松华",
+    "intro_en": "I am a second-year Digital Media and Culture student at King’s College London, interested in how complex social and cultural ideas can be communicated clearly across audiences. My research spans AI-generated content, wearable technology and interface design. This year I also mentor first-year students as a Peer Mentor. In 2026, I interned at People’s Daily, planning an archaeological live broadcast and a documentary series on Chinese food culture, and researching a Sino-foreign co-production. With nearly ten years of self-taught programming and fluency in AI tools, I turn ideas into thoughtful, accessible media.",
+    "intro_zh": "我是伦敦国王学院数字媒体与文化专业大二学生，关注如何向不同受众清晰传达复杂的社会与文化议题。我的研究涵盖 AIGC、可穿戴技术与界面设计。今年我还担任朋辈导师，帮助大一新生适应大学生活。2026 年，我在人民日报实习，参与策划考古直播与中华美食纪录片，并为中外合拍项目做调研。凭借近十年的自学编程经验和对 AI 工具的熟练运用，我能把想法落地为有深度、易理解的媒体作品。"
+  },
+  "education": [
+    {
+      "period": "2025 – 2028",
+      "title_en": "BA Digital Media and Culture",
+      "title_zh": "数字媒体与文化 本科",
+      "org_en": "King's College London",
+      "org_zh": "伦敦国王学院",
+      "detail_en": "First Class average; digital-age communication and cognition, quantitative and qualitative analysis of digital services, interface and interaction design. Scored 85 on a zine about wearables, self-perception and motivation; 70+ on AI-generated content, AI companions, digital-age Chinese politics and digital copyright.",
+      "detail_zh": "一等均分；研究数字时代传播与认知、数字服务的定量与定性分析、界面与交互设计。可穿戴设备主题 zine 获 85 分；AIGC、AI 陪伴、数字时代中国政治与数字版权等实证与理论课程均获 70+。"
+    },
+    {
+      "period": "2022 – 2025",
+      "title_en": "High School Diploma",
+      "title_zh": "高中",
+      "org_en": "Qingdao No.2 High School",
+      "org_zh": "青岛二中",
+      "detail_en": "Graduated with an average grade of 93%.",
+      "detail_zh": "以平均分 93% 毕业。"
+    }
+  ],
+  "experience": [
+    {
+      "period": "May – Jul 2026",
+      "title_en": "Operation Planning Intern",
+      "title_zh": "运营策划实习生",
+      "org_en": "National Humanities History Magazine, People's Daily",
+      "org_zh": "人民日报《国家人文历史》杂志社",
+      "detail_en": "Designed concept, storyboards and shot language for Exploring Gansu, a 3-episode archaeological livestream (adopted as the core approach); built the framework for a 10-episode food-culture documentary and its UNESCO bid; researched Channel 4's Ancient Civilisations by Train for a Sino-foreign co-production submission; wrote Hanfu/poetry reports and Yunnan/Ningde tourism proposals; rewrote merchandise copy, authored a gallery review, and independently cut a 2-minute AI-assisted legal-awareness short drama — managing 3–4 concurrent projects weekly.",
+      "detail_zh": "为三集考古直播《探索甘肃》设计概念、分镜与镜头语言并被采纳为核心方案；搭建十集美食纪录片及申遗框架；为中外合拍片报批研究 Channel 4 案例；撰写汉服、诗歌等专题报告与云南、宁德文旅合作方案；改写登月题材衍生品文案、撰写美术馆评论，并独立用 AI 工具链剪辑两分钟普法短剧，每周并行推进三到四个项目。"
+    },
+    {
+      "period": "May – Aug 2025",
+      "title_en": "Teaching Assistant Intern",
+      "title_zh": "助教实习生",
+      "org_en": "Qingdao New Oriental School",
+      "org_zh": "青岛新东方学校",
+      "detail_en": "Supported nearly 100 high school and university students with daily progress reports and targeted help; graded assignments and reported to parents and supervisors.",
+      "detail_zh": "服务近百名初高中与大学生，每日跟进学习进度并答疑；批改作业并向家长与主管反馈，深入了解课程设计与授课流程。"
+    },
+    {
+      "period": "2026 – 27 academic year",
+      "title_en": "Peer Mentor, Digital Humanities",
+      "title_zh": "数字人文新生朋辈导师",
+      "org_en": "King's College London",
+      "org_zh": "伦敦国王学院",
+      "detail_en": "Mentor 12 first-year students through the transition to university with monthly check-ins on study progress and wellbeing; advise on studying, campus navigation and resources.",
+      "detail_zh": "为 12 名大一新生提供学业与生活适应辅导，每月跟进学习与身心状态，介绍学习方法、校园资源与官方支持渠道。"
+    }
+  ],
+  "volunteering": [
+    {
+      "period": "Feb 2024",
+      "title_en": "Data Journalism Project",
+      "title_zh": "数据新闻项目",
+      "org_en": "Hong Kong Baptist University",
+      "org_zh": "香港浸会大学",
+      "detail_en": "Led filming, sound and editing in a 5-person team; delivered a 5-minute profile interview video and a 1,000-word news article. Studied data journalism and visited Phoenix Television to learn its production workflow.",
+      "detail_zh": "在五人团队中负责拍摄、录音与剪辑，产出五分钟人物采访短片与千字新闻稿；学习数据新闻并参访凤凰卫视了解制播流程。"
+    },
+    {
+      "period": "Aug 2023",
+      "title_en": "English Teaching Volunteer",
+      "title_zh": "英语支教志愿者",
+      "org_en": "Liangshan Teaching Program",
+      "org_zh": "凉山支教项目",
+      "detail_en": "Taught two-hour English lessons daily for two weeks with storytelling, videos and hand-drawn materials; conducted home visits to two households to tailor course content.",
+      "detail_zh": "连续两周每天授课两小时，用故事、视频与手绘教具讲授家庭词汇；家访两户家庭了解生活状况，因材调整课程。"
+    }
+  ],
+  "writing": [
+    {
+      "year": "2026",
+      "kind": "Zine",
+      "lang": "en",
+      "title_en": "Quantifying a Better Self",
+      "title_zh": "量化更好的自我",
+      "venue_en": "King's College London · Coursework",
+      "venue_zh": "伦敦国王学院 · 课程作业",
+      "detail_en": "A 14-page zine on wearable tracking and the quantified self: how self-tracking data builds self-awareness and healthier habits, read against accuracy and privacy risks. Scored 85.",
+      "detail_zh": "十四页杂志：可穿戴追踪与量化自我——自我追踪数据如何增进自我认知、养成更健康的习惯，并直面精度与隐私风险。获 85 分。",
+      "thumb": "/assets/cover-wearable.webp",
+      "href": "/writing/quantifying-better-self/"
+    },
+    {
+      "year": "2026",
+      "kind": "Statement",
+      "lang": "en",
+      "title_en": "Re-rendering Cinema",
+      "title_zh": "重新渲染电影：数字时代的多媒体改编",
+      "venue_en": "King's College London · Coursework",
+      "venue_zh": "伦敦国王学院 · 课程作业",
+      "detail_en": "Artefact statement for a multimedia adaptation project: five films re-rendered as voice, AI music and video collections, exploring adaptation, remediation and convergence.",
+      "detail_zh": "多媒体改编项目的创作陈述：五部电影被重制为语音、AI 音乐与影像合集，探讨改编、再媒介化与媒介融合。",
+      "href": "/writing/re-rendering-cinema/",
+      "thumb": "/assets/cover-rerendering.webp"
+    },
+    {
+      "year": "2026",
+      "kind": "Paper",
+      "lang": "en",
+      "title_en": "The Recurrent Cycle of Piracy",
+      "title_zh": "AIGC与知识产权文化的重塑",
+      "venue_en": "King's College London · Coursework",
+      "venue_zh": "伦敦国王学院 · 课程作业",
+      "detail_en": "On Stability AI vs Getty Images: AIGC innovators reshape copyright culture while becoming a new oligopoly and fragmenting authorship.",
+      "detail_zh": "从 Stability AI 与 Getty Images 一案切入：AIGC 创新者如何重塑版权文化，又如何成为新的寡头并瓦解作者身份。",
+      "href": "/writing/recurrent-cycle-of-piracy/",
+      "thumb": "/assets/cover-piracy.webp"
+    },
+    {
+      "year": "2023",
+      "kind": "Report",
+      "kind_zh": "观察报告",
+      "lang": "zh",
+      "title_zh": "观念的对象",
+      "title_en": "Objects of Concepts (Mandarin)",
+      "venue_zh": "凉山支教 · 观察报告",
+      "venue_en": "Liangshan Teaching Program (Mandarin)",
+      "detail_zh": "2023 年凉山支教七日观察：农村教育何以只是“观念的对象”——硬件、意识、陪伴与课堂的田野记录。",
+      "detail_en": "Seven days of teaching in Liangshan: why rural education remains an object of concepts — hardware, habits, absence and classrooms (Mandarin).",
+      "thumb": "/assets/liangshan-02.webp",
+      "href": "/writing/objects-of-concepts/"
+    }
+  ],
+  "design": [
+    {
+      "year": "2024",
+      "kind": "Poster",
+      "kind_zh": "海报",
+      "lang": "zh",
+      "title_zh": "青岛二中第十届戏剧节海报",
+      "title_en": "10th Drama Festival Poster, Qingdao No.2 High School (Mandarin)",
+      "venue_zh": "青岛二中 · 戏剧节",
+      "venue_en": "Qingdao No.2 High School · Drama Festival (Mandarin)",
+      "detail_zh": "为学校第十届戏剧节设计的主视觉海报，A3 竖版。",
+      "detail_en": "Key visual poster for the school's 10th drama festival (Mandarin), portrait format.",
+      "intro_zh": "为青岛二中第十届戏剧节设计的主视觉海报，竖版构图，用于校内展演宣传。",
+      "intro_en": "Key visual poster for the 10th drama festival of Qingdao No.2 High School (Mandarin), portrait format for on-campus promotion.",
+      "thumb": "/assets/poster-drama-festival.webp",
+      "href": "/design/drama-festival-poster/"
+    },
+    {
+      "year": "2024",
+      "kind": "Keynote",
+      "kind_zh": "讲演",
+      "lang": "zh",
+      "title_zh": "班会专业简介：新闻传播学",
+      "title_en": "Introducing Journalism Studies (Mandarin)",
+      "venue_zh": "班会 · 专业介绍",
+      "venue_en": "Class Meeting · Major Introduction (Mandarin)",
+      "detail_zh": "以张雪峰“报考新闻学”言论风波为引，谈新闻制造与新闻理想：从《新闻女王》《新闻编辑室》《白日之下》等影视，到“文科作为服务业到底服务了谁”。",
+      "detail_en": "Opening with a viral debate over studying journalism (Mandarin): news-making vs journalistic ideals through films from The Newsreader to Spotlight — asking whom the humanities serve.",
+      "intro_zh": "这是高中时期一次班会上的专业介绍讲演，主题是新闻传播学。讲演以张雪峰“劝退”新闻学考生的言论风波开场，讨论“新闻已死”论调背后的真相：新闻行业或许式微，但“制造新闻”从未停止。从《新闻女王》到《聚焦》《白日之下》，讲演用影视案例拆解新闻生产中的取舍与操纵，进而追问——如果文科都是服务业，它到底服务了谁？结尾落在《聚焦》的那句 Break the Story, Break the Silence，以及“十年之后还会不会有记者”的提问。",
+      "intro_en": "A class-meeting talk introducing journalism studies (Mandarin). Opening with a viral debate over whether to study journalism, it contrasts the decline of the news industry with the boom of news-making — through films from The Newsreader to Spotlight — and asks whom the humanities truly serve.",
+      "thumb": "/assets/jy-xinwen-1.webp",
+      "href": "/design/introducing-journalism/"
+    },
+    {
+      "year": "2024",
+      "kind": "Keynote",
+      "kind_zh": "讲演",
+      "lang": "zh",
+      "title_zh": "语文课堂讲演：复活",
+      "title_en": "On Tolstoy's Resurrection (Mandarin)",
+      "venue_zh": "语文课堂",
+      "venue_en": "Chinese Literature Class (Mandarin)",
+      "detail_zh": "41 页课堂讲演：从托尔斯泰的生平与出走之死讲起，重述聂赫留朵夫与玛丝洛娃的“复活”，并以福柯、康德与列宁对照托尔斯泰主义的道德自我完善与不以暴力抗恶。",
+      "detail_en": "A 41-slide literature-class talk (Mandarin): Tolstoy's life and flight, the twin resurrections of Nekhlyudov and Maslova, read through Foucault, Kant and Lenin.",
+      "intro_zh": "语文课堂上的托尔斯泰专题讲演，共 41 页。从托尔斯泰的贵族出身、出走与去世讲起，重述《复活》中聂赫留朵夫与玛丝洛娃两条“复活”的轨迹，并引入三重视角：福柯的规训与惩罚、康德的道德哲学、列宁的革命镜说，最终落到托尔斯泰主义的核心——道德的自我完善与不以暴力抗恶。",
+      "intro_en": "A 41-slide literature-class talk on Tolstoy's Resurrection (Mandarin): Tolstoy's life and flight, the twin resurrections of Nekhlyudov and Maslova, read through Foucault, Kant and Lenin toward Tolstoyan moral self-perfection and non-resistance.",
+      "thumb": "/assets/jy-fuhuo-1.webp",
+      "href": "/design/resurrection/"
+    },
+    {
+      "year": "2023",
+      "kind": "Workshop",
+      "kind_zh": "培训",
+      "lang": "zh",
+      "title_zh": "戏剧社培训设计：一一",
+      "title_en": "Introducing Edward Yang's Yi Yi (Mandarin)",
+      "venue_zh": "戏剧社培训",
+      "venue_en": "Drama Club Training (Mandarin)",
+      "detail_zh": "为校戏剧社设计的电影培训：杨德昌生平、“电影让人生延长三倍”，NJ 一家的剧情与经典台词，结尾附二十余部延伸片单。",
+      "detail_en": "A film-training session for the school drama club (Mandarin): Edward Yang's life, the NJ family's story and its oft-quoted lines, closing with a 20-plus-film watchlist.",
+      "intro_zh": "为校戏剧社做的一次电影培训，以杨德昌的《一一》为教材。从导演生平讲到“电影发明以后，人类的寿命延长了三倍”，细读 NJ 一家人的故事与那些被反复引用的台词，最后附上一份二十余部的延伸片单，供社员课后观看。",
+      "intro_en": "A film-training session for the school drama club built around Edward Yang's Yi Yi (Mandarin): the director's life, the NJ family's story and its oft-quoted lines, closing with a 20-plus-film watchlist.",
+      "thumb": "/assets/jy-yiyi-1.webp",
+      "href": "/design/yi-yi/"
+    },
+    {
+      "year": "2022",
+      "kind": "Keynote",
+      "kind_zh": "讲演",
+      "lang": "zh",
+      "title_zh": "政治课堂讲演：中国房地产改革40年",
+      "title_en": "40 Years of Housing Reform in China (Mandarin)",
+      "venue_zh": "政治课堂",
+      "venue_en": "Politics Class (Mandarin)",
+      "detail_zh": "38 页课堂讲演：以自家“平房—套二—套三—买房—新房”五段居住史为线，串起 1979–2022 年住房商品化、产业化与回归居住属性的三阶段，兼引黄奇帆、兰小欢与吴晓波。",
+      "detail_en": "A 38-slide classroom talk (Mandarin): five chapters of one family's housing history — from bungalows to mortgaged flats — tracing three stages of reform from 1979 to 2022.",
+      "intro_zh": "2022 年 9 月的政治课堂讲演，用 38 页梳理中国房地产改革 40 年。讲演以自家五段居住史（平房、套二、套三、买房、新房）为线索，串起三个阶段：1979–1996 年商品化开启、1997–2014 年产业化拉动增长、2015 年之后回归居住属性。理论上兼引黄奇帆的市场分析、兰小欢《置身事内》的政府视角与吴晓波的商业史叙述，收束于“房住不炒”与“那是一个好的时代”。",
+      "intro_en": "A September 2022 politics-class talk in 38 slides (Mandarin): five chapters of one family's housing history frame three stages of reform — commercialization (1979–1996), industrialization (1997–2014), and the return to housing-as-shelter — with Huang Qifan, Lan Xiaohuan and Wu Xiaobo.",
+      "thumb": "/assets/jy-fangdichan-1.webp",
+      "href": "/design/housing-reform-40-years/"
+    }
+  ],
+  "visualmedia": [
+    {
+      "year": "2025",
+      "kind": "Series",
+      "lang": "en",
+      "title_en": "Daily Photography",
+      "title_zh": "日常摄影",
+      "venue_en": "Ongoing",
+      "venue_zh": "进行中",
+      "detail_en": "An ongoing feed of everyday frames — 8 photos. Tiled three across, each shown at its native ratio.",
+      "detail_zh": "持续更新的日常影像（8 张）。每行三张，每张按原始比例完整展示。",
+      "thumb": "/assets/daily-01.webp",
+      "href": "/visual-media/daily/"
+    },
+    {
+      "year": "2024",
+      "kind": "Video",
+      "kind_zh": "短片",
+      "lang": "en",
+      "title_en": "How We See and Understand the Climate Crisis",
+      "title_zh": "我们如何看见并了解气候危机",
+      "venue_en": "Short Film · 4 min",
+      "venue_zh": "短片 · 约4分钟",
+      "detail_en": "A four-minute short film on how we see and understand the climate crisis.",
+      "detail_zh": "四分钟短片：我们如何看见并了解气候危机。",
+      "thumb": "/assets/video-climate.webp",
+      "href": "/visual-media/climate-crisis/"
+    },
+    {
+      "year": "2024",
+      "kind": "Video",
+      "kind_zh": "采访",
+      "lang": "zh",
+      "title_zh": "香港浸会大学项目视频采访",
+      "title_en": "HKBU Project Video Interview (Mandarin)",
+      "venue_zh": "香港浸会大学 · 数据新闻项目",
+      "venue_en": "HKBU · Data Journalism Project (Mandarin)",
+      "detail_zh": "五人团队完成的五分钟人物采访短片：拍摄、录音与剪辑。",
+      "detail_en": "A five-minute profile interview by a five-person team (Mandarin): filming, sound recording and editing.",
+      "thumb": "/assets/video-hkbu.webp",
+      "href": "/visual-media/hkbu-interview/"
+    }
+  ],
+  "dailyPhotos": [
+    {
+      "src": "/assets/daily-01.webp",
+      "alt_en": "Daily photo 1",
+      "alt_zh": "日常照片 1"
+    },
+    {
+      "src": "/assets/daily-02.webp",
+      "alt_en": "Daily photo 2",
+      "alt_zh": "日常照片 2"
+    },
+    {
+      "src": "/assets/daily-03.webp",
+      "alt_en": "Daily photo 3",
+      "alt_zh": "日常照片 3"
+    },
+    {
+      "src": "/assets/daily-04.webp",
+      "alt_en": "Daily photo 4",
+      "alt_zh": "日常照片 4"
+    },
+    {
+      "src": "/assets/daily-05.webp",
+      "alt_en": "Daily photo 5",
+      "alt_zh": "日常照片 5"
+    },
+    {
+      "src": "/assets/daily-06.webp",
+      "alt_en": "Daily photo 6",
+      "alt_zh": "日常照片 6"
+    },
+    {
+      "src": "/assets/daily-07.webp",
+      "alt_en": "Daily photo 7",
+      "alt_zh": "日常照片 7"
+    },
+    {
+      "src": "/assets/daily-08.webp",
+      "alt_en": "Daily photo 8",
+      "alt_zh": "日常照片 8"
+    }
+  ]
+}

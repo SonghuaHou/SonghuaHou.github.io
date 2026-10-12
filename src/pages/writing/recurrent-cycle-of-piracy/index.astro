@@ -1,0 +1,55 @@
+---
+import Base from "../../../layouts/Base.astro";
+import Topbar from "../../../components/Topbar.astro";
+import SiteFooter from "../../../components/SiteFooter.astro";
+import { site } from "../../../lib/site";
+const w = site.writing[2];
+---
+<Base page="writing" title={`${site.name} — ${w.title_en}`}>
+  <Topbar path="/writing/" />
+  <main>
+    <section class="pad page">
+      <div class="sec-head sf">
+        <a href="/writing/" class="caption" style="color:var(--soft)">← Writing</a>
+        <span class="kicker" style="margin-top:18px; display:inline-flex">{w.kind}<span class="kicker-zh">{w.kind_zh || w.kind}</span></span>
+        <h1 class="sec-title" style="margin-top:14px">{w.title_en}<span class="sec-title-zh">{w.title_zh}</span></h1>
+        <div class="article-meta"><span>{w.year}</span><span>{w.venue_en}</span></div>
+      </div>
+      <div class="article sf">
+        <p class="article-lede">{w.detail_en}</p>
+        <p class="article-lede zh">{w.detail_zh}</p>
+        <div class="article-body">
+          <p>Reshaping of Intellectual Property Culture Stability AI has largely won the court battle with Getty Images, which had accused it of copyright and trademark infringement (Chan, 2025). Britain’s High Court dismissed Getty’s claim concerning copyrighted works, ruling that Stability did not store or reproduce them during its training of Stable Diffusion, its text-to-image AIGC model. This case exemplifies the debates surrounding intellectual property following the advent of generative artificial intelligence, while AI companies are facing more than 50 lawsuits on copyright issues.</p>
+          <p>This essay examines these conflicts within the context of piracy, forms of networking, and authorship, arguing that AIGC innovators shape copyright culture while simultaneously becoming a new oligopoly and fragmenting digital authorship.</p>
+          <h2>Recurrent Cycle of Piracy</h2>
+          <p>Stability and Getty, in this case, or technology companies and the creative industry more broadly, illustrate the continuing history of piracy described by Johns (2009). Pirate broadcasters represent “a form of commercial life that recurred frequently” (Johns, 2009, p. 53), while it is Stability this time. Meanwhile, Getty is one of the dominant forces in the digital creative industry that parallels the BBC, which controlled intellectual property as a monopoly in the UK broadcasting market after the Second World War (Johns, 2009).</p>
+          <p>AI companies such as Stability derive benefit from content owned by these creative businesses when utilising them as learning material to train their AIGC models. Stability is alleged to have scraped 12 million images from Getty without permission to train Stable Diffusion, which may be characterised as commercial piracy. AIGC models advance the interests of their developers in ways not shared with copyright owners.</p>
+          <p>Innovators undermine the established interests of existing dominant forces when they construct a new order in the market, just as individual broadcasters did against the BBC (Johns, 2009). The conflict between AI companies and creative businesses demonstrates that existing principles of copyright are not functioning adequately in the context of technological developments. When this conflict emerges, piracy plays a critical role in cultural evolution (Johns, 2009), prompting reflection upon intellectual property.</p>
+          <p>Individual broadcasters led to the decentralised mode of broadcasting, while contemporary training and utilisation of AIGC models call for a new system of copyright to balance the interests of creators and the freedom of recreation. However, unlike the BBC, Getty operates within an oligopolistic market with no governmental support. This results in significantly diminished market-controlling power for Getty, which affords AI innovators greater opportunity to challenge it.</p>
+          <p>Philip (2005) stated in her article that law had not recognised the nature of new technology properly previously, while it harmed creativity when defending copyright. Conversely, law did not penalise the newcomers this time but rather supported them, which facilitates the transformation of copyright culture alongside AIGC. The recent agreement between Disney and OpenAI provides a potential mode in which Disney permits OpenAI’s model Sora to generate videos featuring their characters while investing in OpenAI and receiving warrants (Disney, 2025).</p>
+          <p>As with previous historical developments, the piracy actions of AI innovators will similarly establish new orders in the market.</p>
+          <h2>The Myth of Democratisation</h2>
+          <p>The development of AIGC explores the original dream of the internet further when it lowers the barriers to “participatory, user-generated and open content and communication” (Allen, 2013, p. 263), which was proposed during Web 2.0. Individuals gain free access to numerous AIGC models, such as Stable Diffusion, and utilise them to create their own content more rapidly and easily without technical knowledge. Following Johns’ (2009, p. 50) assertion that there is “no room for belief that the monopoly was necessary, inevitable, or natural”, AIGC disrupts the oligopolistic control of knowledge by creative businesses and makes it accessible to all users through the model.</p>
+          <p>However, AI innovation falls into the same predicament as Web 2.0, representing only the continuation of the current internet structure (Allen, 2013). AI companies become the new oligopolistic power in the market when they control the technique for creating content or the source of knowledge. Although some models like Stable Diffusion are open-source, technical barriers remain for ordinary users to edit or create AIGC tools.</p>
+          <p>Enterprises do not prioritise internet freedom as their major objective when pursuing commercial gain, which is how Web 2.0 characterised Web 1.0 (Allen, 2013). AI developers also perpetuate the “exploitation of voluntary labour” (Allen, 2013, p. 263) from Web 2.0 when they learn from user requests and responses and do not remunerate licence fees for the training materials, whether those on Getty Images in this case or those posted on UGC platforms.</p>
+          <h2>Fragmented Authorship</h2>
+          <p>Philip (2005) argues in her work that digital copying and “its affiliated modes of creativity” (p. 205) lead the public to recognise Foucault’s fragmented author functions. Getty Images exercises certain authorial rights when acting as an agent to sell the works. Furthermore, AIGC has blurred authorial identity even more substantially when the process of creation is opaque, utilising countless works as its original material.</p>
+          <p>Users, AIGC models and creators of the learning materials all participate in the creation of content. This renders the identification of the copyright owner more problematic. Creators of learning material forfeit their authorship when AIGC models do not record their material contributions, while users are similarly not recognised as the authors of their creations.</p>
+          <p>Notably, both Stability and Getty Images in this case are not the true authors of the contents, while users and creators are disregarded in this debate. Commercial entities rather than individuals benefit from the intellectual property system, although it is individuals who create the “shared imagination … via the activities of producing, circulating, and consuming appropriated digital texts” (Philip, 2005, p. 213). We must emphasise our roles in content creation and construct our “private, personal histories of the internet” (Allen, 2013, p. 270) rather than following the narrative of oligopolistic power, which enables us to take a step closer to the original vision behind the Web.</p>
+          <p>Both Stability and Getty claimed victory following this case, one of the first court rulings concerning generative AI and intellectual property (Chan, 2025). Ultimately, this outcome reveals that further issues still await resolution between these stakeholders. The technological and cultural development continues, seeking to balance the interests of different businesses as well as individuals.</p>
+          <p>Generative AI technologies currently necessitate change as historical patterns of copyright, authorship, and democratic access to information continue to shape contemporary debates.</p>
+        </div>
+          <div class="article-refs">
+            <h2>References</h2>
+            <ol>
+            <li>Allen, M. (2013). What was Web 2.0? Versions as the dominant mode of internet history. New Media &amp; Society, 15(2), 260–275. https://doi.org/10.1177/1461444812451567</li>
+            <li>Chan, K. (2025, November 4). Stability AI largely wins UK court battle against Getty Images over copyright and trademark | AP News. https://apnews.com/article/getty-stability-aiimage-copyright-trademark-fa2c561a33c7b6714a7657255a3fbdf1</li>
+            <li>Disney. (2025, December 11). The Walt Disney Company and OpenAI Reach Agreement to Bring Disney Characters to Sora | The Walt Disney Company. https://thewaltdisneycompany.com/disney-openai-sora-agreement/</li>
+            <li>Johns, A. (2009). Piracy as a Business Force. Culture Machine, 10.</li>
+            <li>Philip, K. (2005). What is a technological author? The pirate function and intellectual property. Postcolonial Studies, 8(2), 199–218. https://doi.org/10.1080/13688790500153596</li>
+            </ol>
+          </div>      </div>
+    </section>
+  </main>
+  <SiteFooter />
+</Base>

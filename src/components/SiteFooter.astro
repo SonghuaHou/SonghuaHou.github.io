@@ -1,0 +1,17 @@
+---
+import { site } from "../lib/site";
+---
+<footer class="ft">
+  <div class="page ft-row">
+    <div>
+      <a class="body-sb" href="/" style="color: var(--text)">{site.name}</a>
+      <p class="caption" style="margin-top:6px">© {site.year} {site.name}. All rights reserved.</p>
+    </div>
+    <div class="ft-social">
+      {site.socials.map((s) => (
+        <a class="caption" href={s.href} target="_blank" rel="noreferrer">{s.label}</a>
+      ))}
+      <a class="caption" href={`mailto:${site.email}`}>{site.email}</a>
+    </div>
+  </div>
+</footer>

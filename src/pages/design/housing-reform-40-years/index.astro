@@ -1,0 +1,37 @@
+---
+import Base from "../../../layouts/Base.astro";
+import Topbar from "../../../components/Topbar.astro";
+import SiteFooter from "../../../components/SiteFooter.astro";
+import { site } from "../../../lib/site";
+const w = site.design[1];
+---
+<Base page="design" title={`${site.name} — ${w.title_zh}`}>
+  <Topbar path="/design/" />
+  <main>
+    <section class="pad page">
+      <div class="sec-head sf">
+        <a href="/design/" class="caption" style="color:var(--soft)">← Design</a>
+        <span class="kicker" style="margin-top:18px; display:inline-flex">{w.kind}<span class="kicker-zh">{w.kind_zh}</span></span>
+        <h1 class="sec-title" style="margin-top:14px">{w.title_zh}<span class="sec-title-zh">{w.title_en}</span></h1>
+        <div class="article-meta"><span>{w.year}</span><span>{w.venue_zh}</span></div>
+        <p class="article-lede" style="margin-top:18px">{w.intro_zh}</p>
+        <p class="article-lede zh">{w.intro_en}</p>
+      </div>
+      <div class="doc-pages sf">
+          <figure>
+            <img src="/assets/jy-fangdichan-1.webp" alt="房地产改革讲演配图 1" loading="lazy" />
+          </figure>
+          <figure>
+            <img src="/assets/jy-fangdichan-2.webp" alt="房地产改革讲演配图 2" loading="lazy" />
+          </figure>
+          <figure>
+            <img src="/assets/jy-fangdichan-3.webp" alt="房地产改革讲演配图 3" loading="lazy" />
+          </figure>
+          <figure>
+            <img src="/assets/jy-fangdichan-4.webp" alt="房地产改革讲演配图 4" loading="lazy" />
+          </figure>
+      </div>
+    </section>
+  </main>
+  <SiteFooter />
+</Base>

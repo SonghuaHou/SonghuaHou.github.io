@@ -1,0 +1,18 @@
+---
+import Base from "../layouts/Base.astro";
+import Topbar from "../components/Topbar.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+import { site } from "../lib/site";
+---
+<Base page="about" title={`Page not found | ${site.name}`}>
+  <Topbar path="/404" />
+  <main>
+    <section class="pad page" style="min-height: 60vh; display:flex; flex-direction:column; justify-content:center">
+      <span class="kicker">404</span>
+      <h1 class="sec-title" style="margin-top:14px">页面不存在</h1>
+      <p class="ab-intro" style="margin-top:16px">你访问的页面找不到了，回到首页继续看看吧。</p>
+      <a class="body-sb" href="/" style="margin-top:28px; color:var(--accent)">← 返回首页</a>
+    </section>
+  </main>
+  <SiteFooter />
+</Base>

@@ -1,0 +1,22 @@
+---
+import Base from "../layouts/Base.astro";
+import Topbar from "../components/Topbar.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+import WorkCard from "../components/WorkCard.astro";
+import { site } from "../lib/site";
+---
+<Base page="visualmedia" title={`${site.name} — Visual Media`}>
+  <Topbar path="/visual-media/" />
+  <main>
+    <section class="pad page">
+      <div class="sec-head sf">
+        <span class="kicker">Visual Media<span class="kicker-zh">视觉媒体</span></span>
+        <h1 class="sec-title" style="margin-top:14px">Series &amp; Films<span class="sec-title-zh">视觉系列 · 媒体</span></h1>
+      </div>
+      <div class="work-list sf">
+        {site.visualmedia.map((w) => <WorkCard w={w} />)}
+      </div>
+    </section>
+  </main>
+  <SiteFooter />
+</Base>

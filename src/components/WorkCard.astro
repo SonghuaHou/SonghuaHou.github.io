@@ -1,0 +1,38 @@
+---
+// Bilingual work card. Primary language follows `w.lang` ("zh" or "en").
+// Chinese-primary works carry "(Mandarin)" inside their EN strings in site.json.
+const { w } = Astro.props;
+const zh = w.lang === "zh";
+---
+<a class="work-item" href={w.href || "#"} style="color:inherit">
+  {w.thumb ? (
+    <div class="work-thumb"><img src={w.thumb} alt={zh ? w.title_zh : w.title_en} loading="lazy" /></div>
+  ) : (
+    <div class="work-thumb work-thumb--text" aria-hidden="true">{(w.kind_zh || w.kind || "文")[0]}</div>
+  )}
+  <div>
+    <span class="work-kind">{zh ? (w.kind_zh || w.kind) : w.kind}</span>
+    <div class="work-year">{w.year}</div>
+    {zh ? (
+      <div class="work-title">{w.title_zh}<span class="sec-title-zh">{w.title_en}</span></div>
+    ) : (
+      <div class="work-title">{w.title_en}<span class="sec-title-zh">{w.title_zh}</span></div>
+    )}
+    {zh ? (
+      <div class="work-venue">{w.venue_zh}<span class="work-venue-zh"> · {w.venue_en}</span></div>
+    ) : (
+      <div class="work-venue">{w.venue_en}<span class="work-venue-zh"> · {w.venue_zh}</span></div>
+    )}
+    {zh ? (
+      <>
+        <p class="work-detail">{w.detail_zh}</p>
+        <p class="work-detail zh">{w.detail_en}</p>
+      </>
+    ) : (
+      <>
+        <p class="work-detail">{w.detail_en}</p>
+        <p class="work-detail zh">{w.detail_zh}</p>
+      </>
+    )}
+  </div>
+</a>

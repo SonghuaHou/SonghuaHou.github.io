@@ -1,0 +1,97 @@
+---
+import Base from "../../../layouts/Base.astro";
+import Topbar from "../../../components/Topbar.astro";
+import SiteFooter from "../../../components/SiteFooter.astro";
+import { site } from "../../../lib/site";
+const w = site.writing[0];
+---
+<Base page="writing" title={`${site.name} — ${w.title_en}`}>
+  <Topbar path="/writing/" />
+  <main>
+    <section class="pad page">
+      <div class="sec-head sf">
+        <a href="/writing/" class="caption" style="color:var(--soft)">← Writing</a>
+        <span class="kicker" style="margin-top:18px; display:inline-flex">{w.kind}<span class="kicker-zh">杂志</span></span>
+        <h1 class="sec-title" style="margin-top:14px">{w.title_en}<span class="sec-title-zh">{w.title_zh}</span></h1>
+        <div class="article-meta"><span>{w.year}</span><span>{w.venue_en}</span><span>8 plates + statement</span></div>
+        <p class="article-lede" style="margin-top:18px">{w.detail_en}</p>
+        <p class="article-lede zh">{w.detail_zh}</p>
+      </div>
+        <div class="doc-pages doc-pages--zine sf">
+          <figure>
+            <img src="/assets/zine-01.webp" alt="Quantifying a Better Self, page 1" loading="lazy" />
+            <figcaption>Page 1 / 第 1 页</figcaption>
+          </figure>
+          <figure>
+            <img src="/assets/zine-02.webp" alt="Quantifying a Better Self, page 2" loading="lazy" />
+            <figcaption>Page 2 / 第 2 页</figcaption>
+          </figure>
+          <figure>
+            <img src="/assets/zine-03.webp" alt="Quantifying a Better Self, page 3" loading="lazy" />
+            <figcaption>Page 3 / 第 3 页</figcaption>
+          </figure>
+          <figure>
+            <img src="/assets/zine-04.webp" alt="Quantifying a Better Self, page 4" loading="lazy" />
+            <figcaption>Page 4 / 第 4 页</figcaption>
+          </figure>
+          <figure>
+            <img src="/assets/zine-05.webp" alt="Quantifying a Better Self, page 5" loading="lazy" />
+            <figcaption>Page 5 / 第 5 页</figcaption>
+          </figure>
+          <figure>
+            <img src="/assets/zine-06.webp" alt="Quantifying a Better Self, page 6" loading="lazy" />
+            <figcaption>Page 6 / 第 6 页</figcaption>
+          </figure>
+          <figure>
+            <img src="/assets/zine-07.webp" alt="Quantifying a Better Self, page 7" loading="lazy" />
+            <figcaption>Page 7 / 第 7 页</figcaption>
+          </figure>
+          <figure>
+            <img src="/assets/zine-08.webp" alt="Quantifying a Better Self, page 8" loading="lazy" />
+            <figcaption>Page 8 / 第 8 页</figcaption>
+          </figure>
+        </div>
+        <div class="article sf">
+          <div class="article-body">
+          <h2>Statement<span class="sec-title-zh">创作陈述</span></h2>
+          <p>This zine explores the prevalence of wearable devices and the widespread practice of self-tracking as a digital phenomenon, examining how individuals recognise and utilise health and fitness data. More than 30% of people currently use wearable devices, with their primary function being the monitoring of fitness and workouts (Chandrasekaran et al., 2025; Shandhi et al., 2024). The zine advances a critical understanding of digital monitoring data and the quantification of everyday life.</p>
+          <p>It argues that, notwithstanding concerns regarding inaccuracy and privacy, the critical application of wearable devices and self-tracking technologies facilitates a deeper selfunderstanding and the development of healthier lifestyle habits. The quantified self (QS) is defined by Swan (2013) as the practice of individuals selftracking any kind of information, while Hilviu and Rapp (2015, p. 1051) suggest it represents the intention to “use technologies for gathering data on different aspects of people’s everyday lives, for gaining self-awareness or producing behaviour change”. Birnstiel et al. (2025) expanded this concept beyond mere data collection, noting that individuals actively seek knowledge and insights into themselves through tracking.</p>
+          <p>Greenfield (2006) introduced the concept of “everyware” — systems perpetually running and gathering data across spaces — while Gilmore (2016) adapted this term to “everywear”, which technology tethered to the body that fosters habits and emphasises physical well-being in daily life. Self-efficacy theory accounts for the degree to which individuals are motivated to persist in certain behaviours and attain challenging goals when they possess confidence in their capabilities (Bandura, 1977). Applied to fitness tracking, these theoretical frameworks illuminate how wearable devices generate data that empowers self-improvement (Birnstiel et al., 2025).</p>
+          <p>Everywear calculates and synthesises movement data, enabling users to monitor their bodies and thereby providing awareness of fitness conditions and potential health risks (Birnstiel et al., 2025; Gilmore, 2016). Ruckenstein and Pantzar (2017, p. 402) contend that QS systems “do not only define a new numerical self but also promote a framework within which such a self operates”.</p>
+          <p>Through data thus monitored, individuals gain a new dimension of self-recognition, measuring performance and establish goals through datafication. In this zine, authentic diagrams illustrate how tracking devices and their associated applications translate movements into data, offering effective means of comprehension through visualisation. Hilviu and Rapp (2015) contend that users may require more intuitive forms of representation, beyond graphs and numerical displays to make sense of the information.</p>
+          <p>Through the visualisation and interpretation of fitness data via closing activity rings, users attain enhanced self-awareness and subsequently modify their behaviour. Individuals reflect upon data and take action accordingly, transforming personal data into insights about themselves (Coşkun &amp; Karahanoğlu, 2023). Furthermore, Apple Health presents data trends as “Highlights”, which offers intuitive representations of long-term tendencies in users’ behaviour.</p>
+          <p>This has enabled me to better understand my activities and adapt my habits to achieve superior performance. Users proactively obtain information and act on it (Swan, 2013), while self-tracking supports improvements in health and fitness conditions through a more informed understanding of oneself. Birnstiel et al. (2025) argue that QS systems increase users’ self-control and assist them in achieving goals.</p>
+          <p>Individuals gain greater confidence in their abilities and accomplishments through earning more badges in fitness applications or meeting established targets. This encourages individuals to persist with positive behaviours and pursue more challenging goals (Birnstiel et al., 2025). Beyond fitness and workouts, QS systems are also employed in daily health monitoring.</p>
+          <p>For instance, Apple introduced a sleep score in 2025 to provide an intuitive indication of sleep quality (Apple Inc., 2025). While these scores are often optimistically high, they help mitigate mental fatigue and augments my energy for the day. Additionally, self-tracking systems employ gamification to assist users in setting and attaining goals and developing habits (Gilmore, 2016).</p>
+          <p>Gamification also makes daily activities more engaging, rendering individual progress more visible and facilitating self-governance (Whitson, 2013). Through the closing of activity rings and the monthly challenges, Apple Fitness introduces a system that allows users to set movement goals and motivates them to attain their desired levels of physical activity or exercise.</p>
+          <p>Habit formation is facilitated when individuals receive sustained data feedback and clear sense of self-awareness, enabling them to identify their progress and efficacy. Nevertheless, significant concerns surround QS systems and wearable devices. The categorisation of sleep stages across multiple wearable platforms remains unreliable and requires continuous refinement (Miller et al., 2022), suggesting that consumer wearable devices may produce inaccurate and misleading results that distort selfknowledge.</p>
+          <p>Furthermore, the user data collected by such devices is susceptible to leakage and misappropriation by various parties for advertising and commercial competition (Ajana, 2017; Valletti &amp; Caffarra, 2020). It has also been argued that the monitoring process may constitute a form of surveillance capitalism, whereby data gathered from sensors of technology products is exploited by businesses to serve their own interests (Zuboff, 2015). Such evidence necessitates a more critical and cautious approach to wearable products, considering their limited accuracy and privacy risks.</p>
+          <p>Reflecting upon the systematic principles by which wearable devices reshape our selfawareness and facilitate self-improvements through self-quantification has enabled me to engage with health and fitness tracking products in a more critical and effective manner. I can interpret sleep quality results more rationally by acknowledging their potential for low accuracy, while still benefiting from the positive reinforcement regarding my rest. Understanding how QS systems synthesise data and gamify activity has also allowed for more effective use of self-tracking tools in establishing more realistic goals and the active development of healthier habits.</p>
+          <p>Through quantifying oneself, individuals may attain a deeper knowledge of their own behaviours and greater control over their life habits, thereby constructing positive feedback that enhances self-esteem. Through more critical usage of wearable products accounting for possible inaccuracy also with caution regarding data, we can achieve more complete self-awareness and better control over our living habits. Overall, this zine integrates personal experience and the phenomenon of using wearable devices with relevant theoretical frameworks and empirical research.</p>
+          <p>It examines the operational principles underlying the quantified self while also proposes pathways to self-improvement through the effective and considered use of selftracking technologies. By applying self-efficacy theory as a foundational framework, and by attending to limitations and drawbacks of wearable technologies, the zine offers a critical perspective on the everyday use of QS systems.</p>
+          </div>
+          <div class="article-refs">
+            <h2>References</h2>
+            <ol>
+            <li>Ajana, B. (2017). Digital health and the biopolitics of the Quantified Self. DIGITAL HEALTH, 3, 2055207616689509. https://doi.org/10.1177/2055207616689509</li>
+            <li>Apple Inc. (2025, September 9). Apple debuts Apple Watch Series 11, featuring groundbreaking health insights—Apple (UK). Apple (UK). https://www.apple.com/uk/newsroom/2025/09/apple-debuts-apple-watchseries-11-featuring-groundbreaking-health-insights/</li>
+            <li>Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215. https://doi.org/10.1037/0033- 295X.84.2.191</li>
+            <li>Birnstiel, S., Reiss, S., Fernández Galeote, D., Duemler, B., &amp; Morschheuser, B. (2025). Becoming Your Quantified Self: A Study of the Effects of Personal Avatars in Self-Tracking Sports Apps. International Journal of Human– Computer Interaction, 1–28. https://doi.org/10.1080/10447318.2025.2573042</li>
+            <li>Chandrasekaran, R., Sadiq T, M., &amp; Moustakas, E. (2025). Usage Trends and Data Sharing Practices of Healthcare Wearable Devices Among US Adults: CrossSectional Study. Journal of Medical Internet Research, 27, e63879. https://doi.org/10.2196/63879</li>
+            <li>Coşkun, A., &amp; Karahanoğlu, A. (2023). Data Sensemaking in Self-Tracking: Towards a New Generation of Self-Tracking Tools. International Journal of Human– Computer Interaction, 39(12), 2339–2360. https://doi.org/10.1080/10447318.2022.2075637</li>
+            <li>Gilmore, J. N. (2016). Everywear: The quantified self and wearable fitness technologies. New Media &amp; Society, 18(11), 2524–2539. https://doi.org/10.1177/1461444815588768</li>
+            <li>Greenfield, A. (2006). Everyware: The dawning age of ubiquitous computing. New Riders.</li>
+            <li>Hilviu, D., &amp; Rapp, A. (2015). Narrating the quantified self. Proceedings of the 2015 ACM International Joint Conference on Pervasive and Ubiquitous Computing and Proceedings of the 2015 ACM International Symposium on Wearable Computers - UbiComp ’15, 1051–1056. https://doi.org/10.1145/2800835.2800959</li>
+            <li>Miller, D. J., Sargent, C., &amp; Roach, G. D. (2022). A Validation of Six Wearable Devices for Estimating Sleep, Heart Rate and Heart Rate Variability in Healthy Adults. Sensors, 22(16), 6317. https://doi.org/10.3390/s22166317</li>
+            <li>Ruckenstein, M., &amp; Pantzar, M. (2017). Beyond the Quantified Self: Thematic exploration of a dataistic paradigm. New Media &amp; Society, 19(3), 401–418. https://doi.org/10.1177/1461444815609081</li>
+            <li>Shandhi, M. M. H., Singh, K., Janson, N., Ashar, P., Singh, G., Lu, B., Hillygus, D. S., Maddocks, J. M., &amp; Dunn, J. P. (2024). Assessment of ownership of smart devices and the acceptability of digital health data sharing. Npj Digital Medicine, 7(1), 44. https://doi.org/10.1038/s41746-024-01030-x</li>
+            <li>Swan, M. (2013). The Quantified Self: Fundamental Disruption in Big Data Science and Biological Discovery. Big Data, 1(2), 85–99. https://doi.org/10.1089/big.2012.0002</li>
+            <li>Valletti, T., &amp; Caffarra, C. (2020, March 4). Google/Fitbit review: Privacy IS a competition issue. CEPR. https://cepr.org/voxeu/blogs-andreviews/googlefitbit-review-privacy-competition-issue</li>
+            <li>Whitson, J. R. (2013). Gaming the Quantified Self. Surveillance &amp; Society, 11(1/2), 163–176. https://doi.org/10.24908/ss.v11i1/2.4454</li>
+            <li>Zuboff, S. (2015). Big other: Surveillance Capitalism and the Prospects of an Information Civilization. Journal of Information Technology, 30(1), 75–89. https://doi.org/10.1057/jit.2015.5</li>
+            </ol>
+          </div>        </div>
+    </section>
+  </main>
+  <SiteFooter />
+</Base>

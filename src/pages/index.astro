@@ -1,0 +1,104 @@
+---
+import Base from "../layouts/Base.astro";
+import Topbar from "../components/Topbar.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+import { site } from "../lib/site";
+---
+<Base page="about" title={`${site.name} — About`}>
+  <Topbar path="/" />
+  <main>
+    <!-- Hero -->
+    <section class="pad page">
+      <div class="ab-hero sf">
+        <div class="ab-photo">
+          <img src={site.about.photo} alt={site.name} />
+        </div>
+        <div class="ab-bio">
+          <div class="ab-bio-en">
+            <h1 class="ab-name">{site.name}</h1>
+            <p class="ab-intro">{site.about.intro_en}</p>
+          </div>
+          <div class="ab-bio-zh" aria-hidden="true">
+            <h1 class="ab-name">{site.about.name_zh}</h1>
+            <p class="ab-intro">{site.about.intro_zh}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="pad page" style="padding-top:0">
+      <div class="sec-head sf">
+        <span class="kicker">Education<span class="kicker-zh">教育经历</span></span>
+      </div>
+      <div class="resume sf">
+        {site.education.map((e) => (
+          <div class="resume-item">
+            <div class="resume-period">{e.period}</div>
+            <div>
+              <div class="resume-title">{e.title_en}</div>
+              <div class="resume-org">{e.org_en}<span class="resume-org-zh"> · {e.org_zh}</span></div>
+              <p class="resume-detail">{e.detail_en}</p>
+              <p class="resume-detail zh">{e.detail_zh}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="pad page" style="padding-top:0">
+      <div class="sec-head sf">
+        <span class="kicker">Experience<span class="kicker-zh">工作与实习</span></span>
+      </div>
+      <div class="resume sf">
+        {site.experience.map((e) => (
+          <div class="resume-item">
+            <div class="resume-period">{e.period}</div>
+            <div>
+              <div class="resume-title">{e.title_en}</div>
+              <div class="resume-org">{e.org_en}<span class="resume-org-zh"> · {e.org_zh}</span></div>
+              <p class="resume-detail">{e.detail_en}</p>
+              <p class="resume-detail zh">{e.detail_zh}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Project & Volunteering -->
+    <section class="pad page" style="padding-top:0">
+      <div class="sec-head sf">
+        <span class="kicker">Project &amp; Volunteering<span class="kicker-zh">项目与志愿</span></span>
+      </div>
+      <div class="resume sf">
+        {site.volunteering.map((e) => (
+          <div class="resume-item">
+            <div class="resume-period">{e.period}</div>
+            <div>
+              <div class="resume-title">{e.title_en}</div>
+              <div class="resume-org">{e.org_en}<span class="resume-org-zh"> · {e.org_zh}</span></div>
+              <p class="resume-detail">{e.detail_en}</p>
+              <p class="resume-detail zh">{e.detail_zh}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+    <!-- Selected Work -->
+    <section class="pad page" style="padding-top:0">
+      <div class="sec-head sf">
+        <span class="kicker">Selected Work<span class="kicker-zh">精选作品</span></span>
+      </div>
+      <div class="portfolio-links sf">
+        {site.nav.slice(1).map((l, i) => (
+          <a class="portfolio-link" href={l.href} style={`--accent:${["#ff5e9c", "#ffc233", "#3ea6ff"][i]}`}>
+            <span class="portfolio-title">{l.label}<span class="nav-zh">{l.zh}</span></span>
+            <span class="portfolio-arrow" aria-hidden="true">→</span>
+          </a>
+        ))}
+      </div>
+    </section>
+  </main>
+  <SiteFooter />
+</Base>

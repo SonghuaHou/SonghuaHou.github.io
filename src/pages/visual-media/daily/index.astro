@@ -1,0 +1,54 @@
+---
+import Base from "../../../layouts/Base.astro";
+import Topbar from "../../../components/Topbar.astro";
+import SiteFooter from "../../../components/SiteFooter.astro";
+import { site } from "../../../lib/site";
+---
+<Base page="visualmedia" title={`${site.name} — Daily Photography`}>
+  <Topbar path="/visual-media/" />
+  <main>
+    <section class="pad page">
+      <div class="sec-head sf">
+        <a href="/visual-media/" class="caption" style="color:var(--soft)">← Visual Media</a>
+        <span class="kicker" style="margin-top:18px; display:inline-flex">Daily Photography<span class="kicker-zh">日常摄影</span></span>
+        <h1 class="sec-title" style="margin-top:14px">Everyday frames<span class="sec-title-zh">日常影像</span></h1>
+      </div>
+
+      <div class="gallery sf">
+        {site.dailyPhotos.map((p) => (
+          <button type="button" class="g-item" data-full={p.src} aria-label={p.alt_en}>
+            <img src={p.src} alt={p.alt_en} loading="lazy" />
+          </button>
+        ))}
+      </div>
+    </section>
+  </main>
+
+  <div class="lb" data-lightbox>
+    <button type="button" class="lb-close" data-lb-close aria-label="Close">&times;</button>
+    <img data-lb-img src="" alt="" />
+  </div>
+
+  <SiteFooter />
+</Base>
+
+<script>
+  const lb = document.querySelector<HTMLElement>("[data-lightbox]");
+  const img = lb?.querySelector<HTMLImageElement>("[data-lb-img]");
+  const close = lb?.querySelector<HTMLElement>("[data-lb-close]");
+
+  document.querySelectorAll<HTMLElement>("[data-full]").forEach((el) => {
+    el.addEventListener("click", () => {
+      if (!lb || !img) return;
+      img.src = el.getAttribute("data-full") || "";
+      img.alt = el.querySelector("img")?.alt || "";
+      lb.classList.add("is-open");
+      document.body.style.overflow = "hidden";
+    });
+  });
+
+  const hide = () => { lb?.classList.remove("is-open"); document.body.style.overflow = ""; };
+  close?.addEventListener("click", hide);
+  lb?.addEventListener("click", (e) => { if (e.target === lb) hide(); });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") hide(); });
+</script>
