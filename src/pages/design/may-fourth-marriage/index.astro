@@ -1,0 +1,94 @@
+---
+import Base from "../../../layouts/Base.astro";
+import Topbar from "../../../components/Topbar.astro";
+import SiteFooter from "../../../components/SiteFooter.astro";
+import { site } from "../../../lib/site";
+const w = site.design.find((x) => x.href === "/design/may-fourth-marriage/")!;
+---
+<Base page="design" title={`${site.name} — ${w.title_zh}`}>
+  <Topbar path="/design/" />
+  <main>
+    <section class="pad page">
+      <div class="sec-head sf">
+        <a href="/design/" class="caption" style="color:var(--soft)">← Design</a>
+        <span class="kicker" style="margin-top:18px; display:inline-flex">{w.kind}<span class="kicker-zh">{w.kind_zh}</span></span>
+        <h1 class="sec-title" style="margin-top:14px">{w.title_zh}<span class="sec-title-zh">{w.title_en}</span></h1>
+        <div class="article-meta"><span>{w.year}</span><span>{w.venue_zh}</span></div>
+        <p class="article-lede" style="margin-top:18px">{w.intro_zh}</p>
+        <p class="article-lede zh">{w.intro_en}</p>
+      </div>
+      <div class="doc-pages sf">
+          <figure>
+            <img src="/assets/deck-wusi-01.webp" alt="五四婚姻读书分享 第 1 页" loading="lazy" />
+          </figure>
+          <figure>
+            <img src="/assets/deck-wusi-02.webp" alt="五四婚姻读书分享 第 2 页" loading="lazy" />
+          </figure>
+          <figure>
+            <img src="/assets/deck-wusi-03.webp" alt="五四婚姻读书分享 第 3 页" loading="lazy" />
+          </figure>
+          <figure>
+            <img src="/assets/deck-wusi-04.webp" alt="五四婚姻读书分享 第 4 页" loading="lazy" />
+          </figure>
+          <figure>
+            <img src="/assets/deck-wusi-05.webp" alt="五四婚姻读书分享 第 5 页" loading="lazy" />
+          </figure>
+          <figure>
+            <img src="/assets/deck-wusi-06.webp" alt="五四婚姻读书分享 第 6 页" loading="lazy" />
+          </figure>
+          <figure>
+            <img src="/assets/deck-wusi-07.webp" alt="五四婚姻读书分享 第 7 页" loading="lazy" />
+          </figure>
+          <figure>
+            <img src="/assets/deck-wusi-08.webp" alt="五四婚姻读书分享 第 8 页" loading="lazy" />
+          </figure>
+          <figure>
+            <img src="/assets/deck-wusi-09.webp" alt="五四婚姻读书分享 第 9 页" loading="lazy" />
+          </figure>
+          <figure>
+            <img src="/assets/deck-wusi-10.webp" alt="五四婚姻读书分享 第 10 页" loading="lazy" />
+          </figure>
+          <figure>
+            <img src="/assets/deck-wusi-11.webp" alt="五四婚姻读书分享 第 11 页" loading="lazy" />
+          </figure>
+          <figure>
+            <img src="/assets/deck-wusi-12.webp" alt="五四婚姻读书分享 第 12 页" loading="lazy" />
+          </figure>
+          <figure>
+            <img src="/assets/deck-wusi-13.webp" alt="五四婚姻读书分享 第 13 页" loading="lazy" />
+          </figure>
+          <figure>
+            <img src="/assets/deck-wusi-14.webp" alt="五四婚姻读书分享 第 14 页" loading="lazy" />
+          </figure>
+          <figure>
+            <img src="/assets/deck-wusi-15.webp" alt="五四婚姻读书分享 第 15 页" loading="lazy" />
+          </figure>
+          <figure>
+            <img src="/assets/deck-wusi-16.webp" alt="五四婚姻读书分享 第 16 页" loading="lazy" />
+          </figure>
+          <figure>
+            <img src="/assets/deck-wusi-17.webp" alt="五四婚姻读书分享 第 17 页" loading="lazy" />
+          </figure>
+          <figure>
+            <img src="/assets/deck-wusi-18.webp" alt="五四婚姻读书分享 第 18 页" loading="lazy" />
+          </figure>
+          <figure>
+            <img src="/assets/deck-wusi-19.webp" alt="五四婚姻读书分享 第 19 页" loading="lazy" />
+          </figure>
+          <figure>
+            <img src="/assets/deck-wusi-20.webp" alt="五四婚姻读书分享 第 20 页" loading="lazy" />
+          </figure>
+          <figure>
+            <img src="/assets/deck-wusi-21.webp" alt="五四婚姻读书分享 第 21 页" loading="lazy" />
+          </figure>
+          <figure>
+            <img src="/assets/deck-wusi-22.webp" alt="五四婚姻读书分享 第 22 页" loading="lazy" />
+          </figure>
+          <figure>
+            <img src="/assets/deck-wusi-23.webp" alt="五四婚姻读书分享 第 23 页" loading="lazy" />
+          </figure>
+      </div>
+    </section>
+  </main>
+  <SiteFooter />
+</Base>

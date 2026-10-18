@@ -281,6 +281,22 @@
       "href": "/design/drama-festival-poster/"
     },
     {
+      "year": "2026",
+      "kind": "Reading Share",
+      "kind_zh": "读书分享",
+      "lang": "zh",
+      "title_zh": "读书分享《五四婚姻》",
+      "title_en": "Reading Share: Marriage in the May Fourth Era (Mandarin)",
+      "venue_zh": "读书分享 · 《五四婚姻》",
+      "venue_en": "Reading Share · The May Fourth Marriage (Mandarin)",
+      "detail_zh": "围绕《五四婚姻》的读书分享：新文化运动时期的“新女性”观念——从朱安、许广平、陆小曼到张幼仪、江冬秀，看婚姻剧变中女性的妥协、夹缝与非典型突围。",
+      "detail_en": "A reading share on The May Fourth Marriage: the “New Woman” of the May Fourth era — from Zhu An, Xu Guangping and Lu Xiaoman to Zhang Youyi and Jiang Dongxiu (Mandarin).",
+      "intro_zh": "2026 年的一场读书分享，共 23 页，围绕《五四婚姻》中“新女性”的观念展开：先看 1880–1920 年以男性为主力推动的妇女运动，与 1920 年代“自由恋爱、婚姻自主、人格独立”的第二浪主张；再依次走进五段婚姻——被“新规范”抛弃的朱安、在家务与身份夹缝中妥协的许广平与陆小曼，以及以非常规方式守住独立人格的张幼仪与江冬秀，最终落在经济独立与人格独立的张力上。",
+      "intro_en": "A 2026 reading share in 23 slides (Mandarin) on The May Fourth Marriage and its “New Woman”: from the male-led women's movement of 1880–1920 and the 1920s second wave of free love, marriage autonomy and personal independence, to five marriages — Zhu An abandoned by the new norm, Xu Guangping and Lu Xiaoman compromising between duty and self, and Zhang Youyi and Jiang Dongxiu keeping an independent personality by atypical means — closing on the tension between economic and personal independence.",
+      "thumb": "/assets/deck-wusi-01.webp",
+      "href": "/design/may-fourth-marriage/"
+    },
+    {
       "year": "2024",
       "kind": "Keynote",
       "kind_zh": "讲演",
