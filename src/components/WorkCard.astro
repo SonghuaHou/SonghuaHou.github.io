@@ -25,13 +25,13 @@ const zh = w.lang === "zh";
     )}
     {zh ? (
       <>
-        <p class="work-detail">{w.detail_zh}</p>
-        <p class="work-detail zh">{w.detail_en}</p>
+        {w.detail_zh && <p class="work-detail">{w.detail_zh}</p>}
+        {w.detail_en && <p class="work-detail zh">{w.detail_en}</p>}
       </>
     ) : (
       <>
-        <p class="work-detail">{w.detail_en}</p>
-        <p class="work-detail zh">{w.detail_zh}</p>
+        {w.detail_en && <p class="work-detail">{w.detail_en}</p>}
+        {w.detail_zh && <p class="work-detail zh">{w.detail_zh}</p>}
       </>
     )}
   </div>

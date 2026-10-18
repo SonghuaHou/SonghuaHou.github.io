@@ -131,7 +131,7 @@
       "venue_zh": "伦敦国王学院 · 课程作业",
       "detail_en": "A comparative study completed with Alice Jing and Zhewen Xu: a persona-guided walkthrough of two AI companion apps, Replika and Nomi.ai, assessed across intimacy design and risk management; the full 23-page report is shown as images.",
       "detail_zh": "与 Alice Jing、Zhewen Xu 合作完成的比较研究：以 persona 引导的走查法对比 Replika 与 nomi.ai 两款 AI 陪伴应用，从亲密关系设计与风险管理两个维度展开评估。全文 23 页以图片呈现。",
-      "thumb": "/assets/replika-01.webp",
+      "thumb": "/assets/cover-replika.webp",
       "href": "/writing/designing-intimacy/"
     },
     {
@@ -266,8 +266,6 @@
       "title_zh": "日常摄影",
       "venue_en": "Ongoing",
       "venue_zh": "进行中",
-      "detail_en": "An ongoing feed of everyday frames — 8 photos. Tiled three across, each shown at its native ratio.",
-      "detail_zh": "持续更新的日常影像（8 张）。每行三张，每张按原始比例完整展示。",
       "thumb": "/assets/daily-01.webp",
       "href": "/visual-media/daily/"
     },
