@@ -367,6 +367,8 @@ pages['visual-media/climate-crisis/index.astro'] = video_page(
     'climate-crisis', '/visual-media/climate-crisis/', True, 'climate-crisis.mp4', 'video-climate.webp')
 pages['visual-media/hkbu-interview/index.astro'] = video_page(
     'hkbu-interview', '/visual-media/hkbu-interview/', False, 'hkbu-interview.mp4', 'video-hkbu.webp')
+pages['visual-media/escape/index.astro'] = video_page(
+    'escape', '/visual-media/escape/', True, 'escape.mp4', 'video-escape.webp')
 
 TEXT_PAGES = {
     'writing/quantifying-better-self/index.astro',

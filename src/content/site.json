@@ -296,6 +296,20 @@
       "detail_en": "A five-minute profile interview by a five-person team (Mandarin): filming, sound recording and editing.",
       "thumb": "/assets/video-hkbu.webp",
       "href": "/visual-media/hkbu-interview/"
+    },
+    {
+      "year": "2026",
+      "kind": "Video",
+      "kind_zh": "短片",
+      "lang": "en",
+      "title_en": "Escape",
+      "title_zh": "逃生",
+      "venue_en": "Short Film · 2:37 · Creating Knowledge Through Media",
+      "venue_zh": "短片 · 2:37 · Creating Knowledge Through Media 课程",
+      "detail_en": "An impromptu short film improvised in a Creating Knowledge Through Media seminar: shot and edited within 15 minutes.",
+      "detail_zh": "在 Creating Knowledge Through Media 课程研讨课上即兴创作的短片：15 分钟内完成拍摄与剪辑。",
+      "thumb": "/assets/video-escape.webp",
+      "href": "/visual-media/escape/"
     }
   ],
   "dailyPhotos": [
