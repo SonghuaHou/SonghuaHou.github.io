@@ -28,6 +28,6 @@ const isCurrent = (href: string) => href === path;
     </button>
   </div>
   <nav class="topbar-mobile" aria-label="Mobile" aria-hidden="true" data-mobile-nav>
-    {site.nav.map((l) => <a class:list={["h3", { "is-current": isCurrent(l.href) }]} href={l.href} tabindex="-1">{l.label} <span style="font-size:0.5em;color:var(--white-60);font-weight:400">{l.zh}</span></a>)}
+    {site.nav.map((l) => <a class:list={["h3", { "is-current": isCurrent(l.href) }]} href={l.href} tabindex="-1">{l.label} <span style="font-size:0.5em;color:var(--soft);font-weight:400">{l.zh}</span></a>)}
   </nav>
 </header>
