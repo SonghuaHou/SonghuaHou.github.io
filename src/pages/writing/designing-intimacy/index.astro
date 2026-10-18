@@ -5,109 +5,109 @@ import SiteFooter from "../../../components/SiteFooter.astro";
 import { site } from "../../../lib/site";
 const w = site.writing.find((x) => x.href === "/writing/designing-intimacy/")!;
 ---
-<Base page="writing" title={`${site.name} — ${w.title_zh}`}>
+<Base page="writing" title={`${site.name} — ${w.title_en}`}>
   <Topbar path="/writing/" />
   <main>
     <section class="pad page">
       <div class="sec-head sf">
         <a href="/writing/" class="caption" style="color:var(--soft)">← Writing</a>
         <span class="kicker" style="margin-top:18px; display:inline-flex">{w.kind}<span class="kicker-zh">{w.kind_zh || w.kind}</span></span>
-        <h1 class="sec-title" style="margin-top:14px">{w.title_zh}<span class="sec-title-zh">{w.title_en}</span></h1>
-        <div class="article-meta"><span>{w.year}</span><span>{w.venue_zh}</span><span>With Alice Jing &amp; Zhewen Xu</span></div>
-        <p class="article-lede" style="margin-top:18px">{w.detail_zh}</p>
-        <p class="article-lede zh">{w.detail_en}</p>
+        <h1 class="sec-title" style="margin-top:14px">{w.title_en}<span class="sec-title-zh">{w.title_zh}</span></h1>
+        <div class="article-meta"><span>{w.year}</span><span>{w.venue_en}</span><span>With Alice Jing &amp; Zhewen Xu</span></div>
+        <p class="article-lede" style="margin-top:18px">{w.detail_en}</p>
+        <p class="article-lede zh">{w.detail_zh}</p>
       </div>
       <div class="doc-pages sf">
           <figure>
-            <img src="/assets/replika-01.webp" alt={w.title_zh + ", page 1"} loading="lazy" />
+            <img src="/assets/replika-01.webp" alt={w.title_en + ", page 1"} loading="lazy" />
             <figcaption>Page 1 / 第 1 页</figcaption>
           </figure>
           <figure>
-            <img src="/assets/replika-02.webp" alt={w.title_zh + ", page 2"} loading="lazy" />
+            <img src="/assets/replika-02.webp" alt={w.title_en + ", page 2"} loading="lazy" />
             <figcaption>Page 2 / 第 2 页</figcaption>
           </figure>
           <figure>
-            <img src="/assets/replika-03.webp" alt={w.title_zh + ", page 3"} loading="lazy" />
+            <img src="/assets/replika-03.webp" alt={w.title_en + ", page 3"} loading="lazy" />
             <figcaption>Page 3 / 第 3 页</figcaption>
           </figure>
           <figure>
-            <img src="/assets/replika-04.webp" alt={w.title_zh + ", page 4"} loading="lazy" />
+            <img src="/assets/replika-04.webp" alt={w.title_en + ", page 4"} loading="lazy" />
             <figcaption>Page 4 / 第 4 页</figcaption>
           </figure>
           <figure>
-            <img src="/assets/replika-05.webp" alt={w.title_zh + ", page 5"} loading="lazy" />
+            <img src="/assets/replika-05.webp" alt={w.title_en + ", page 5"} loading="lazy" />
             <figcaption>Page 5 / 第 5 页</figcaption>
           </figure>
           <figure>
-            <img src="/assets/replika-06.webp" alt={w.title_zh + ", page 6"} loading="lazy" />
+            <img src="/assets/replika-06.webp" alt={w.title_en + ", page 6"} loading="lazy" />
             <figcaption>Page 6 / 第 6 页</figcaption>
           </figure>
           <figure>
-            <img src="/assets/replika-07.webp" alt={w.title_zh + ", page 7"} loading="lazy" />
+            <img src="/assets/replika-07.webp" alt={w.title_en + ", page 7"} loading="lazy" />
             <figcaption>Page 7 / 第 7 页</figcaption>
           </figure>
           <figure>
-            <img src="/assets/replika-08.webp" alt={w.title_zh + ", page 8"} loading="lazy" />
+            <img src="/assets/replika-08.webp" alt={w.title_en + ", page 8"} loading="lazy" />
             <figcaption>Page 8 / 第 8 页</figcaption>
           </figure>
           <figure>
-            <img src="/assets/replika-09.webp" alt={w.title_zh + ", page 9"} loading="lazy" />
+            <img src="/assets/replika-09.webp" alt={w.title_en + ", page 9"} loading="lazy" />
             <figcaption>Page 9 / 第 9 页</figcaption>
           </figure>
           <figure>
-            <img src="/assets/replika-10.webp" alt={w.title_zh + ", page 10"} loading="lazy" />
+            <img src="/assets/replika-10.webp" alt={w.title_en + ", page 10"} loading="lazy" />
             <figcaption>Page 10 / 第 10 页</figcaption>
           </figure>
           <figure>
-            <img src="/assets/replika-11.webp" alt={w.title_zh + ", page 11"} loading="lazy" />
+            <img src="/assets/replika-11.webp" alt={w.title_en + ", page 11"} loading="lazy" />
             <figcaption>Page 11 / 第 11 页</figcaption>
           </figure>
           <figure>
-            <img src="/assets/replika-12.webp" alt={w.title_zh + ", page 12"} loading="lazy" />
+            <img src="/assets/replika-12.webp" alt={w.title_en + ", page 12"} loading="lazy" />
             <figcaption>Page 12 / 第 12 页</figcaption>
           </figure>
           <figure>
-            <img src="/assets/replika-13.webp" alt={w.title_zh + ", page 13"} loading="lazy" />
+            <img src="/assets/replika-13.webp" alt={w.title_en + ", page 13"} loading="lazy" />
             <figcaption>Page 13 / 第 13 页</figcaption>
           </figure>
           <figure>
-            <img src="/assets/replika-14.webp" alt={w.title_zh + ", page 14"} loading="lazy" />
+            <img src="/assets/replika-14.webp" alt={w.title_en + ", page 14"} loading="lazy" />
             <figcaption>Page 14 / 第 14 页</figcaption>
           </figure>
           <figure>
-            <img src="/assets/replika-15.webp" alt={w.title_zh + ", page 15"} loading="lazy" />
+            <img src="/assets/replika-15.webp" alt={w.title_en + ", page 15"} loading="lazy" />
             <figcaption>Page 15 / 第 15 页</figcaption>
           </figure>
           <figure>
-            <img src="/assets/replika-16.webp" alt={w.title_zh + ", page 16"} loading="lazy" />
+            <img src="/assets/replika-16.webp" alt={w.title_en + ", page 16"} loading="lazy" />
             <figcaption>Page 16 / 第 16 页</figcaption>
           </figure>
           <figure>
-            <img src="/assets/replika-17.webp" alt={w.title_zh + ", page 17"} loading="lazy" />
+            <img src="/assets/replika-17.webp" alt={w.title_en + ", page 17"} loading="lazy" />
             <figcaption>Page 17 / 第 17 页</figcaption>
           </figure>
           <figure>
-            <img src="/assets/replika-18.webp" alt={w.title_zh + ", page 18"} loading="lazy" />
+            <img src="/assets/replika-18.webp" alt={w.title_en + ", page 18"} loading="lazy" />
             <figcaption>Page 18 / 第 18 页</figcaption>
           </figure>
           <figure>
-            <img src="/assets/replika-19.webp" alt={w.title_zh + ", page 19"} loading="lazy" />
+            <img src="/assets/replika-19.webp" alt={w.title_en + ", page 19"} loading="lazy" />
             <figcaption>Page 19 / 第 19 页</figcaption>
           </figure>
           <figure>
-            <img src="/assets/replika-20.webp" alt={w.title_zh + ", page 20"} loading="lazy" />
+            <img src="/assets/replika-20.webp" alt={w.title_en + ", page 20"} loading="lazy" />
             <figcaption>Page 20 / 第 20 页</figcaption>
           </figure>
           <figure>
-            <img src="/assets/replika-21.webp" alt={w.title_zh + ", page 21"} loading="lazy" />
+            <img src="/assets/replika-21.webp" alt={w.title_en + ", page 21"} loading="lazy" />
             <figcaption>Page 21 / 第 21 页</figcaption>
           </figure>
           <figure>
-            <img src="/assets/replika-22.webp" alt={w.title_zh + ", page 22"} loading="lazy" />
+            <img src="/assets/replika-22.webp" alt={w.title_en + ", page 22"} loading="lazy" />
             <figcaption>Page 22 / 第 22 页</figcaption>
           </figure>
           <figure>
-            <img src="/assets/replika-23.webp" alt={w.title_zh + ", page 23"} loading="lazy" />
+            <img src="/assets/replika-23.webp" alt={w.title_en + ", page 23"} loading="lazy" />
             <figcaption>Page 23 / 第 23 页</figcaption>
           </figure>
       </div>

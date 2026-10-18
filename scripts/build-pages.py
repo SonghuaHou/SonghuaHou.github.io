@@ -327,7 +327,7 @@ const w = site.{section}.find((x) => x.href === "{href}")!;
 
 # --- designing intimacy: 23 full-text page images ---
 pages['writing/designing-intimacy/index.astro'] = imgdoc_page(
-    'writing', 'designing-intimacy', False,
+    'writing', 'designing-intimacy', True,
     [f'replika-{i:02d}.webp' for i in range(1, 24)],
     'With Alice Jing &amp; Zhewen Xu')
 
