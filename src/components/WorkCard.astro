@@ -12,7 +12,7 @@ const zh = w.lang === "zh";
   )}
   <div>
     <span class="work-kind">{zh ? (w.kind_zh || w.kind) : w.kind}</span>
-    <div class="work-year">{w.year}</div>
+    {w.year && <div class="work-year">{w.year}</div>}
     {zh ? (
       <div class="work-title">{w.title_zh}<span class="sec-title-zh">{w.title_en}</span></div>
     ) : (

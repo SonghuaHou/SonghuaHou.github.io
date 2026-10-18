@@ -65,7 +65,7 @@
         "Average grade 93%. Activities and societies: Drama Club, Journalism Team."
       ],
       "bullets_zh": [
-        "平均成绩 93%。参与社团：戏剧社、校刊团队。"
+        "平均成绩 93%。参与社团：戏剧社、记者团。"
       ]
     }
   ],
@@ -179,7 +179,7 @@
     {
       "period": "Oct 2022 – Jul 2023",
       "title_en": "Coordinator and Editor, Journalism Team",
-      "title_zh": "校刊团队统筹与编辑",
+      "title_zh": "记者团统筹与编辑",
       "org_en": "Qingdao No.2 High School",
       "org_zh": "青岛二中",
       "bullets_en": [
@@ -347,7 +347,6 @@
   ],
   "visualmedia": [
     {
-      "year": "2025",
       "kind": "Series",
       "lang": "en",
       "title_en": "Daily Photography",
@@ -358,7 +357,7 @@
       "href": "/visual-media/daily/"
     },
     {
-      "year": "2024",
+      "year": "2026",
       "kind": "Video",
       "kind_zh": "短片",
       "lang": "en",
