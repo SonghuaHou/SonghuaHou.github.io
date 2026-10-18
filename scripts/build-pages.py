@@ -224,7 +224,7 @@ pages = {}
 
 # --- 4 keynote detail pages: full deck screenshots from design/讲演 ---
 pages['design/introducing-journalism/index.astro'] = design_page(
-    'introducing-journalism', *deck('deck-xinwen', 26, '新闻传播学讲演'))
+    'introducing-journalism', *deck('deck-xinwen', 15, '新闻传播学讲演'))
 pages['design/housing-reform-40-years/index.astro'] = design_page(
     'housing-reform-40-years', *deck('deck-fangdichan', 38, '房地产改革讲演'))
 pages['design/resurrection/index.astro'] = design_page(
