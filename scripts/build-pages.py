@@ -94,14 +94,20 @@ def aigc_fragments():
                 out.append(f'          <p>{html.escape(p)}</p>')
     return '\n'.join(out)
 
-AIGC_BODY = aigc_fragments()
+HAVE_TEXTS = all((T / n).exists() for n in [
+    'zine-statement.txt', 'zine-refs.txt', 'aigc-refs.txt', 'stmt-body.txt',
+    'stmt-refs.txt', 'liangshan-full.txt'])
+if not HAVE_TEXTS:
+    print('WARN: extracted text fragments missing in', T, '— skipping text pages')
+
+AIGC_BODY = aigc_fragments() if HAVE_TEXTS else ''
 print('aigc paras+h:', AIGC_BODY.count('<p>'), AIGC_BODY.count('<h2>'))
 
-ZINE_STMT = p_tags(paras_of('zine-statement.txt'))
-ZINE_REFS = ref_list(refs_of('zine-refs.txt'))
-AIGC_REFS = ref_list(refs_of('aigc-refs.txt'))
-STMT_BODY = p_tags(paras_of('stmt-body.txt'))
-STMT_REFS = ref_list(refs_of('stmt-refs.txt'))
+ZINE_STMT = p_tags(paras_of('zine-statement.txt')) if HAVE_TEXTS else ''
+ZINE_REFS = ref_list(refs_of('zine-refs.txt')) if HAVE_TEXTS else ''
+AIGC_REFS = ref_list(refs_of('aigc-refs.txt')) if HAVE_TEXTS else ''
+STMT_BODY = p_tags(paras_of('stmt-body.txt')) if HAVE_TEXTS else ''
+STMT_REFS = ref_list(refs_of('stmt-refs.txt')) if HAVE_TEXTS else ''
 
 def figure(src, alt, caption):
     return (f'          <figure class="article-figure">\n'
@@ -129,7 +135,7 @@ LIANGSHAN = paras_with_figures('liangshan-full.txt', [
      figure('/assets/liangshan-02.webp', '课间聚在操场上的学生们', '课间聚在操场上的学生们')),
     ('送给课堂提问得分最高的学生一本书',
      figure('/assets/liangshan-03.webp', '走在村道上的支教队员们', '走在村道上的支教队员们')),
-])
+]) if HAVE_TEXTS else ''
 # 结尾段改为三行落款
 LIANGSHAN = re.sub(
     r'<p>2023[^<]*</p>',
@@ -229,7 +235,9 @@ pages['design/yi-yi/index.astro'] = design_page(
     ['jy-yiyi-1.webp', 'jy-yiyi-2.webp', 'jy-yiyi-3.webp'],
     ['一一培训配图 1', '一一培训配图 2', '一一培训配图 3'])
 pages['design/drama-festival-poster/index.astro'] = design_page(
-    'drama-festival-poster', ['poster-drama-festival.webp'], ['青岛二中第十届戏剧节海报'])
+    'drama-festival-poster',
+    ['poster-drama-festival.webp', 'poster-drama-ten.webp'],
+    ['青岛二中第十届戏剧节海报', '戏剧十年海报'])
 
 # --- zine page: 14 page images + statement + refs ---
 zfigs = '\n'.join(
@@ -277,6 +285,52 @@ epigraph = ('        <p class="article-lede">“农村教育并没有提供观�
 pages['writing/objects-of-concepts/index.astro'] = blog_page(
     'writing', 'writing', 'objects-of-concepts', False, LIANGSHAN, '', epigraph)
 
+# --- full-text-as-images writing page (zine style) ---
+def imgdoc_page(section, slug, en_primary, imgs, credit):
+    (SRC / section / slug).mkdir(parents=True, exist_ok=True)
+    href = f'/{section}/{slug}/'
+    title_p, title_s = ('w.title_en', 'w.title_zh') if en_primary else ('w.title_zh', 'w.title_en')
+    venue_p = 'w.venue_en' if en_primary else 'w.venue_zh'
+    det_p, det_s = ('w.detail_en', 'w.detail_zh') if en_primary else ('w.detail_zh', 'w.detail_en')
+    figs = '\n'.join(
+        f'          <figure>\n'
+        f'            <img src="/assets/{img}" alt={{{title_p} + ", page {i}"}} loading="lazy" />\n'
+        f'            <figcaption>Page {i} / 第 {i} 页</figcaption>\n          </figure>'
+        for i, img in enumerate(imgs, 1))
+    return f"""---
+import Base from "../../../layouts/Base.astro";
+import Topbar from "../../../components/Topbar.astro";
+import SiteFooter from "../../../components/SiteFooter.astro";
+import {{ site }} from "../../../lib/site";
+const w = site.{section}.find((x) => x.href === "{href}")!;
+---
+<Base page="{section}" title={{`${{site.name}} — ${{{title_p}}}`}}>
+  <Topbar path="/{section}/" />
+  <main>
+    <section class="pad page">
+      <div class="sec-head sf">
+        <a href="/{section}/" class="caption" style="color:var(--soft)">← {'Writing' if section == 'writing' else 'Visual Media'}</a>
+        <span class="kicker" style="margin-top:18px; display:inline-flex">{{w.kind}}<span class="kicker-zh">{{w.kind_zh || w.kind}}</span></span>
+        <h1 class="sec-title" style="margin-top:14px">{{{title_p}}}<span class="sec-title-zh">{{{title_s}}}</span></h1>
+        <div class="article-meta"><span>{{w.year}}</span><span>{{{venue_p}}}</span><span>{credit}</span></div>
+        <p class="article-lede" style="margin-top:18px">{{{det_p}}}</p>
+        <p class="article-lede zh">{{{det_s}}}</p>
+      </div>
+      <div class="doc-pages sf">
+{figs}
+      </div>
+    </section>
+  </main>
+  <SiteFooter />
+</Base>
+"""
+
+# --- designing intimacy: 23 full-text page images ---
+pages['writing/designing-intimacy/index.astro'] = imgdoc_page(
+    'writing', 'designing-intimacy', False,
+    [f'replika-{i:02d}.webp' for i in range(1, 24)],
+    'With Alice Jing &amp; Zhewen Xu')
+
 # --- 2 video pages ---
 def video_page(slug, href, en_primary, mp4, poster):
     (SRC / 'visual-media' / slug).mkdir(parents=True, exist_ok=True)
@@ -317,7 +371,16 @@ pages['visual-media/climate-crisis/index.astro'] = video_page(
 pages['visual-media/hkbu-interview/index.astro'] = video_page(
     'hkbu-interview', '/visual-media/hkbu-interview/', False, 'hkbu-interview.mp4', 'video-hkbu.webp')
 
+TEXT_PAGES = {
+    'writing/quantifying-better-self/index.astro',
+    'writing/re-rendering-cinema/index.astro',
+    'writing/recurrent-cycle-of-piracy/index.astro',
+    'writing/objects-of-concepts/index.astro',
+}
 for rel, content in pages.items():
+    if not HAVE_TEXTS and rel in TEXT_PAGES:
+        print('kept existing (texts missing):', rel)
+        continue
     (SRC / rel).write_text(content)
     print('wrote', rel)
 print('total:', len(pages))
