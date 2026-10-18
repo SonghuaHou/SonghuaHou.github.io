@@ -145,6 +145,11 @@ LIANGSHAN = re.sub(
 ZH_REFS_HEAD = '<h2>参考文献</h2>'
 
 # ---------- page templates ----------
+def deck(prefix, n, label):
+    """Full-deck screenshots: deck-XX-01..n.webp with page-numbered alts."""
+    return ([f'{prefix}-{i:02d}.webp' for i in range(1, n + 1)],
+            [f'{label} 第 {i} 页' for i in range(1, n + 1)])
+
 def design_page(slug, images, alts):
     (SRC / 'design' / slug).mkdir(parents=True, exist_ok=True)
     href = f'/design/{slug}/'
@@ -217,23 +222,15 @@ const w = site.{section}.find((x) => x.href === "{href}")!;
 
 pages = {}
 
-# --- 4 keynote detail pages ---
+# --- 4 keynote detail pages: full deck screenshots from design/讲演 ---
 pages['design/introducing-journalism/index.astro'] = design_page(
-    'introducing-journalism',
-    ['jy-xinwen-1.webp', 'jy-xinwen-2.webp', 'jy-xinwen-3.webp'],
-    ['新闻传播学讲演配图 1', '新闻传播学讲演配图 2', '新闻传播学讲演配图 3'])
+    'introducing-journalism', *deck('deck-xinwen', 26, '新闻传播学讲演'))
 pages['design/housing-reform-40-years/index.astro'] = design_page(
-    'housing-reform-40-years',
-    ['jy-fangdichan-1.webp', 'jy-fangdichan-2.webp', 'jy-fangdichan-3.webp', 'jy-fangdichan-4.webp'],
-    ['房地产改革讲演配图 1', '房地产改革讲演配图 2', '房地产改革讲演配图 3', '房地产改革讲演配图 4'])
+    'housing-reform-40-years', *deck('deck-fangdichan', 38, '房地产改革讲演'))
 pages['design/resurrection/index.astro'] = design_page(
-    'resurrection',
-    ['jy-fuhuo-1.webp', 'jy-fuhuo-2.webp', 'jy-fuhuo-3.webp', 'jy-fuhuo-4.webp'],
-    ['复活讲演配图 1', '复活讲演配图 2', '复活讲演配图 3', '复活讲演配图 4'])
+    'resurrection', *deck('deck-fuhuo', 39, '复活讲演'))
 pages['design/yi-yi/index.astro'] = design_page(
-    'yi-yi',
-    ['jy-yiyi-1.webp', 'jy-yiyi-2.webp', 'jy-yiyi-3.webp'],
-    ['一一培训配图 1', '一一培训配图 2', '一一培训配图 3'])
+    'yi-yi', *deck('deck-yiyi', 17, '一一道来（含台词训练）'))
 pages['design/drama-festival-poster/index.astro'] = design_page(
     'drama-festival-poster',
     ['poster-drama-festival.webp', 'poster-drama-ten.webp'],
