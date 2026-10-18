@@ -38,8 +38,11 @@ import { site } from "../lib/site";
             <div>
               <div class="resume-title">{e.title_en}</div>
               <div class="resume-org">{e.org_en}<span class="resume-org-zh"> · {e.org_zh}</span></div>
-              <p class="resume-detail">{e.detail_en}</p>
-              <p class="resume-detail zh">{e.detail_zh}</p>
+              <ul class="resume-bullets">
+                {e.bullets_en.map((b, i) => (
+                  <li>{b}<span class="bl-zh">{e.bullets_zh[i]}</span></li>
+                ))}
+              </ul>
             </div>
           </div>
         ))}
@@ -58,8 +61,11 @@ import { site } from "../lib/site";
             <div>
               <div class="resume-title">{e.title_en}</div>
               <div class="resume-org">{e.org_en}<span class="resume-org-zh"> · {e.org_zh}</span></div>
-              <p class="resume-detail">{e.detail_en}</p>
-              <p class="resume-detail zh">{e.detail_zh}</p>
+              <ul class="resume-bullets">
+                {e.bullets_en.map((b, i) => (
+                  <li>{b}<span class="bl-zh">{e.bullets_zh[i]}</span></li>
+                ))}
+              </ul>
             </div>
           </div>
         ))}
@@ -69,7 +75,7 @@ import { site } from "../lib/site";
     <!-- Project & Volunteering -->
     <section class="pad page" style="padding-top:0">
       <div class="sec-head sf">
-        <span class="kicker">Project &amp; Volunteering<span class="kicker-zh">项目与志愿</span></span>
+        <span class="kicker">Volunteering &amp; Projects<span class="kicker-zh">志愿者经历与项目</span></span>
       </div>
       <div class="resume sf">
         {site.volunteering.map((e) => (
@@ -78,13 +84,32 @@ import { site } from "../lib/site";
             <div>
               <div class="resume-title">{e.title_en}</div>
               <div class="resume-org">{e.org_en}<span class="resume-org-zh"> · {e.org_zh}</span></div>
-              <p class="resume-detail">{e.detail_en}</p>
-              <p class="resume-detail zh">{e.detail_zh}</p>
+              <ul class="resume-bullets">
+                {e.bullets_en.map((b, i) => (
+                  <li>{b}<span class="bl-zh">{e.bullets_zh[i]}</span></li>
+                ))}
+              </ul>
             </div>
           </div>
         ))}
       </div>
     </section>
+    <!-- Skills -->
+    <section class="pad page" style="padding-top:0">
+      <div class="sec-head sf">
+        <span class="kicker">Skills<span class="kicker-zh">技能</span></span>
+      </div>
+      <div class="skills sf">
+        {site.skills.map((s) => (
+          <div class="skill-item">
+            <div class="skill-title">{s.title_en}<span class="resume-org-zh"> · {s.title_zh}</span></div>
+            <p class="resume-detail">{s.detail_en}</p>
+            <p class="resume-detail zh">{s.detail_zh}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
     <!-- Selected Work -->
     <section class="pad page" style="padding-top:0">
       <div class="sec-head sf">

@@ -120,6 +120,16 @@ body[data-page="visualmedia"]  { --accent: #3ea6ff; }  /* 视觉媒体 · 蓝 */
 .resume-title { font-size: 22px; font-weight: 600; color: var(--text); }
 .resume-org { margin-top: 4px; font-size: 15px; color: var(--accent); font-weight: 600; }
 .resume-detail { margin-top: 8px; font-size: 15px; line-height: 1.6; color: var(--soft); max-width: 60ch; }
+.resume-bullets { margin: 10px 0 0; padding: 0; list-style: none; display: grid; gap: 9px; max-width: 68ch; }
+.resume-bullets li { position: relative; padding-left: 18px; font-size: 15px; line-height: 1.6; color: var(--soft); }
+.resume-bullets li::before { content: ""; position: absolute; left: 0; top: 0.6em; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+.bl-zh { display: block; margin-top: 3px; font-size: 13.5px; line-height: 1.65; color: var(--soft); opacity: 0.72; }
+
+/* ---------- Skills ---------- */
+.skills { display: grid; grid-template-columns: repeat(2, 1fr); gap: 26px 48px; }
+@media (max-width: 700px) { .skills { grid-template-columns: 1fr; } }
+.skill-title { font-size: 19px; font-weight: 600; color: var(--text); }
+.skill-item .resume-detail { margin-top: 6px; }
 
 /* ---------- About 页末：三类作品入口（各用主题色） ---------- */
 .portfolio-links { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }

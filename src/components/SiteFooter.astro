@@ -8,6 +8,8 @@ import { site } from "../lib/site";
       <p class="caption" style="margin-top:6px">© {site.year} {site.name}. All rights reserved.</p>
     </div>
     <div class="ft-social">
+      <a class="caption" href="/cv/Songhua-Hou-CV-EN.pdf" download>CV (EN) ↓</a>
+      <a class="caption" href="/cv/Songhua-Hou-CV-ZH.pdf" download>简历（中文）↓</a>
       {site.socials.map((s) => (
         <a class="caption" href={s.href} target="_blank" rel="noreferrer">{s.label}</a>
       ))}

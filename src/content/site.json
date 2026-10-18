@@ -34,8 +34,8 @@
   "about": {
     "photo": "/assets/portrait.webp",
     "name_zh": "侯松华",
-    "intro_en": "I am a second-year Digital Media and Culture student at King’s College London, interested in how complex social and cultural ideas can be communicated clearly across audiences. My research spans AI-generated content, wearable technology and interface design. This year I also mentor first-year students as a Peer Mentor. In 2026, I interned at People’s Daily, planning an archaeological live broadcast and a documentary series on Chinese food culture, and researching a Sino-foreign co-production. With nearly ten years of self-taught programming and fluency in AI tools, I turn ideas into thoughtful, accessible media.",
-    "intro_zh": "我是伦敦国王学院数字媒体与文化专业大二学生，关注如何向不同受众清晰传达复杂的社会与文化议题。我的研究涵盖 AIGC、可穿戴技术与界面设计。今年我还担任朋辈导师，帮助大一新生适应大学生活。2026 年，我在人民日报实习，参与策划考古直播与中华美食纪录片，并为中外合拍项目做调研。凭借近十年的自学编程经验和对 AI 工具的熟练运用，我能把想法落地为有深度、易理解的媒体作品。"
+    "intro_en": "I am a second-year Digital Media and Culture student at King's College London, focused on communicating complex social and cultural ideas clearly to diverse audiences. At People's Daily, I planned a three-episode archaeological live broadcast, developed a ten-episode documentary framework on Chinese food culture and researched a Channel 4 series to support a Sino-foreign co-production. With experience in journalism, drama and teaching, systematic training and nearly ten years of independent programming, and a quick command of AI tools, I turn ideas into thoughtful, accessible and innovative media. I am seeking media and marketing internships.",
+    "intro_zh": "我是伦敦国王学院数字媒体与文化专业二年级本科生，专注于向不同受众清晰传达复杂的社会与文化议题。在人民日报实习期间，我策划了三集考古直播，搭建了十集中餐文化纪录片的内容框架，并调研英国第四频道节目，为中外合拍项目提供支持。我拥有新闻、戏剧和教学经历，接受过系统的编程训练并有近十年的独立编程经验，能快速上手 AI 工具，致力于创作有思想、易理解、有创新的媒体内容。目前正在寻找传媒和营销方向的实习机会。"
   },
   "education": [
     {
@@ -44,8 +44,16 @@
       "title_zh": "数字媒体与文化 本科",
       "org_en": "King's College London",
       "org_zh": "伦敦国王学院",
-      "detail_en": "First Class average; digital-age communication and cognition, quantitative and qualitative analysis of digital services, interface and interaction design. Scored 85 on a zine about wearables, self-perception and motivation; 70+ on AI-generated content, AI companions, digital-age Chinese politics and digital copyright.",
-      "detail_zh": "一等均分；研究数字时代传播与认知、数字服务的定量与定性分析、界面与交互设计。可穿戴设备主题 zine 获 85 分；AIGC、AI 陪伴、数字时代中国政治与数字版权等实证与理论课程均获 70+。"
+      "bullets_en": [
+        "First Class average; research spans digital-age communication and cognition, quantitative and qualitative analysis of digital services, and interface and interaction design",
+        "Scored 85 on a zine project examining how wearable devices shape self-perception and motivation",
+        "Achieved 70+ in empirical and theoretical studies on AI-generated content, AI companions, Chinese politics in the digital age and digital copyright"
+      ],
+      "bullets_zh": [
+        "目前平均成绩为一等；研究方向包括数字时代的传播与认知、数字服务的定量与定性分析、用户界面与交互设计",
+        "“可穿戴设备如何影响自我认知与驱动”主题的 zine 项目获 85 分",
+        "在 AI 生成内容、AI 伴侣、数字时代的中国政治、数字时代的版权等课题的实证或理论研究中取得 70 分以上"
+      ]
     },
     {
       "period": "2022 – 2025",
@@ -53,8 +61,12 @@
       "title_zh": "高中",
       "org_en": "Qingdao No.2 High School",
       "org_zh": "青岛二中",
-      "detail_en": "Graduated with an average grade of 93%.",
-      "detail_zh": "以平均分 93% 毕业。"
+      "bullets_en": [
+        "Average grade 93%. Activities and societies: Drama Club, Journalism Team."
+      ],
+      "bullets_zh": [
+        "平均成绩 93%。参与社团：戏剧社、校刊团队。"
+      ]
     }
   ],
   "experience": [
@@ -64,8 +76,24 @@
       "title_zh": "运营策划实习生",
       "org_en": "National Humanities History Magazine, People's Daily",
       "org_zh": "人民日报《国家人文历史》杂志社",
-      "detail_en": "Designed concept, storyboards and shot language for Tracing the Origins of Gansu, a 3-episode archaeological livestream (adopted as the core approach); built the framework for a 10-episode Chinese food-culture documentary, riding the momentum of its UNESCO inscription; researched Channel 4's Ancient Civilisations by Train for a Sino-foreign co-production submission; wrote Hanfu/poetry reports and Yunnan/Ningde tourism proposals; wrote merchandise copy for the documentary film Moon Landing, authored a gallery review, and independently cut a 2-minute AI-assisted legal-awareness short drama — managing 3–4 concurrent projects weekly.",
-      "detail_zh": "为三集考古直播《探源甘肃》设计概念、分镜与镜头语言并被采纳为核心方案；搭建十集中华美食纪录片框架，借美食非遗申遗契机推进项目；为中外合拍片报批研究 Channel 4 案例；撰写汉服、诗歌等专题报告与云南、宁德文旅合作方案；为纪录电影《登月》撰写周边文创文案、撰写美术馆评论，并独立用 AI 工具链剪辑两分钟普法短剧，每周并行推进三到四个项目。"
+      "bullets_en": [
+        "Designed the concept, storyboards and shot language for Tracing the Origins of Gansu, a three-episode archaeological livestream (2–3 hours and 30+ scenes per episode); plan adopted as the core approach and still in delivery",
+        "Developed the framework for a ten-episode documentary on Chinese food culture, riding the momentum of its UNESCO inscription, covering themes such as the origins of chopsticks and street-food stalls, with traffic highlights per episode for youth audiences",
+        "Researched the team, production company and comparable titles of Channel 4's Ancient Civilisations by Train (China season), providing key evidence for the central-government submission and approval of a Sino-foreign documentary",
+        "Produced thematic research reports on Hanfu, poetry and other cultural areas, and drafted tourism partnership proposals for Yunnan and Ningde, each outlining five initial projects (ongoing)",
+        "Rewrote product-page copy (2,000 Chinese characters) for four merchandise items of the documentary film Moon Landing and authored a 2,400-character review of the Haidian Cultural and Art Centre, illustrated with two key exhibitions",
+        "Created a two-minute anti-corruption legal-awareness short drama by combining four AI tools (reference image, video, voice-over and music generation) and editing the final cut independently",
+        "Managed three to four major projects concurrently each week, delivering ahead of schedule and progressing from copywriting to full cross-media content planning"
+      ],
+      "bullets_zh": [
+        "设计三集考古直播《探源甘肃》的创意、分镜和镜头语言（每集 2–3 小时、30 余个场景），方案被采纳为核心思路，目前仍在推进",
+        "搭建十集中餐文化纪录片的内容框架，借中餐申遗契机展开，涵盖筷子、大排档等起源与演变主题，每集标注流量亮点，面向青年受众",
+        "调研英国第四频道《跟着火车看文明》中国篇的创作团队、制作公司及同类题材作品，为项目上报中央部门并通过中外合拍纪录片审批提供重要支撑",
+        "撰写汉服、诗词等多个文化方向的专题调研报告，并为云南、宁德起草文旅合作方案，各含五个合作项目的初步计划（推进中）",
+        "为纪录电影《登月》的四款周边修改商品详情页文案（共 2000 字），并撰写海淀三山五园文化艺术中心评测报告（2400 字），配以两个主要展览的图片",
+        "综合使用参考图生成、视频生成、配音、配乐四款 AI 工具，独立剪辑完成一部两分钟的反腐败普法短片",
+        "每周同时跟进 3 至 4 个主要项目，提前完成任务，从文案写作成长为全流程跨媒体内容策划"
+      ]
     },
     {
       "period": "May – Aug 2025",
@@ -73,37 +101,97 @@
       "title_zh": "助教实习生",
       "org_en": "Qingdao New Oriental School",
       "org_zh": "青岛新东方学校",
-      "detail_en": "Supported nearly 100 high school and university students with daily progress reports and targeted help; graded assignments and reported to parents and supervisors.",
-      "detail_zh": "服务近百名初高中与大学生，每日跟进学习进度并答疑；批改作业并向家长与主管反馈，深入了解课程设计与授课流程。"
-    },
+      "bullets_en": [
+        "Supported nearly 100 high school and university students with daily study-progress reports, feedback and targeted help",
+        "Graded assignments and assessments and reported progress to parents and supervisors, gaining insight into curriculum design and course delivery"
+      ],
+      "bullets_zh": [
+        "辅导近百名高中和大学学生，每日提交学习状况跟踪报告，提供反馈和针对性帮助",
+        "批改作业与测评，并向家长和督导汇报学习进展，了解课程设计与授课流程"
+      ]
+    }
+  ],
+  "volunteering": [
     {
-      "period": "2026 – 27 academic year",
+      "period": "2026 – 27 academic year – Present",
       "title_en": "Peer Mentor, Digital Humanities",
       "title_zh": "数字人文新生朋辈导师",
       "org_en": "King's College London",
       "org_zh": "伦敦国王学院",
-      "detail_en": "Mentor 12 first-year students through the transition to university with monthly check-ins on study progress and wellbeing; advise on studying, campus navigation and resources.",
-      "detail_zh": "为 12 名大一新生提供学业与生活适应辅导，每月跟进学习与身心状态，介绍学习方法、校园资源与官方支持渠道。"
-    }
-  ],
-  "volunteering": [
+      "bullets_en": [
+        "Mentor 12 first-year students through the transition to university, with monthly check-ins on study progress and wellbeing",
+        "Advise on studying, campus navigation and university resources, drawing on first-hand experience as a King's student",
+        "Act as an approachable point of contact for informal queries and signpost official support services where appropriate"
+      ],
+      "bullets_zh": [
+        "指导 12 名新生适应大学生活，每月跟进一次学习和生活状况",
+        "结合自身在国王学院的经验，提供学习、校园熟悉和资源利用方面的建议",
+        "作为新生日常疑问的亲切联络人，并在需要时引导其使用学校官方支持服务"
+      ]
+    },
     {
       "period": "Feb 2024",
       "title_en": "Data Journalism Project",
       "title_zh": "数据新闻项目",
       "org_en": "Hong Kong Baptist University",
       "org_zh": "香港浸会大学",
-      "detail_en": "Led filming, sound and editing in a 5-person team; delivered a 5-minute profile interview video and a 1,000-word news article. Studied data journalism and visited Phoenix Television to learn its production workflow.",
-      "detail_zh": "在五人团队中负责拍摄、录音与剪辑，产出五分钟人物采访短片与千字新闻稿；学习数据新闻并参访凤凰卫视了解制播流程。"
+      "bullets_en": [
+        "Led filming, sound recording and editing within a five-person team, delivering a five-minute profile interview video and a 1,000-word news article",
+        "Studied data journalism and media-industry trends; visited Phoenix Television to learn about its production workflow"
+      ],
+      "bullets_zh": [
+        "五人小组协作，负责拍摄、录音和剪辑，产出五分钟人物专访视频和 1000 词新闻稿",
+        "学习数据新闻和传媒行业趋势，并参观凤凰卫视，了解媒体制作流程"
+      ]
     },
     {
       "period": "Aug 2023",
-      "title_en": "English Teaching Volunteer",
-      "title_zh": "英语支教志愿者",
+      "title_en": "Volunteer English Teacher",
+      "title_zh": "支教英语老师",
       "org_en": "Liangshan Teaching Program",
       "org_zh": "凉山支教项目",
-      "detail_en": "Taught two-hour English lessons daily for two weeks with storytelling, videos and vocabulary on family-related topics drawn on the blackboard; conducted home visits to two households to tailor course content.",
-      "detail_zh": "连续两周每天授课两小时，用故事、视频配合黑板手绘讲解家庭相关词汇；家访两户家庭了解生活状况，因材调整课程。"
+      "bullets_en": [
+        "Prepared and taught two-hour English lessons daily for two weeks, using storytelling, three videos and a hand-drawn house layout to teach household vocabulary",
+        "Conducted home visits to two households to understand living conditions and tailor course materials"
+      ],
+      "bullets_zh": [
+        "连续两周每天备课并授课两小时，借助故事、三段视频和手绘房屋布置，讲解家居生活常用词汇",
+        "家访两户学生家庭，了解生活情况并据此定制教学内容"
+      ]
+    },
+    {
+      "period": "Oct 2022 – May 2024",
+      "title_en": "Vice President, Drama Club",
+      "title_zh": "戏剧社副社长",
+      "org_en": "Qingdao No.2 High School",
+      "org_zh": "青岛二中",
+      "bullets_en": [
+        "Directed, wrote and performed in the annual school drama production and city-wide theatre competitions",
+        "Organised backstage operations for the Drama Festival and introduced participants to directing and scriptwriting techniques",
+        "Coordinated rehearsals and refined performances for the club's main productions"
+      ],
+      "bullets_zh": [
+        "导演、编剧并参演学校年度戏剧演出及全市戏剧比赛",
+        "组织戏剧节幕后工作，向参与者介绍导演与编剧技巧",
+        "协调社团主要作品的排练并打磨演出"
+      ]
+    },
+    {
+      "period": "Oct 2022 – Jul 2023",
+      "title_en": "Coordinator and Editor, Journalism Team",
+      "title_zh": "校刊团队统筹与编辑",
+      "org_en": "Qingdao No.2 High School",
+      "org_zh": "青岛二中",
+      "bullets_en": [
+        "Oversaw photography for major school events, including the flag-raising ceremony and sports festival",
+        "Managed reporting and publication for the sports festival, coordinating photographers and writers across multiple venues",
+        "Edited and finalised photo and text reports, ensuring accuracy and quality"
+      ],
+      "bullets_zh": [
+        "负责升旗仪式、运动会等学校大型活动的摄影工作",
+        "统筹运动会的报道与发布，协调多个场地的摄影师和撰稿人",
+        "编辑并定稿图文报道，确保内容准确、质量过关"
+      ]
     }
   ],
   "writing": [
@@ -352,6 +440,32 @@
       "src": "/assets/daily-08.webp",
       "alt_en": "Daily photo 8",
       "alt_zh": "日常照片 8"
+    }
+  ],
+  "skills": [
+    {
+      "title_en": "Languages",
+      "title_zh": "语言",
+      "detail_en": "Mandarin (native); English (full professional proficiency; IELTS 7.5: Listening 9, Reading 8.5); French (beginner)",
+      "detail_zh": "普通话（母语）；英语（完全专业水平，雅思 7.5：听力 9 分、阅读 8.5 分）；法语（初学者）"
+    },
+    {
+      "title_en": "Programming",
+      "title_zh": "编程",
+      "detail_en": "Systematic training in Python, HTML, CSS, JavaScript (working proficiency) and SQL (foundational), with nearly ten years of independent programming; able to debug and refine AI-assisted code",
+      "detail_zh": "系统学习 Python、HTML、CSS、JavaScript（熟练掌握主要任务和功能）及 SQL（基础），拥有近十年独立编程经验；能发现并修正 AI 辅助编程结果中的问题"
+    },
+    {
+      "title_en": "Design and Video",
+      "title_zh": "设计与视频",
+      "detail_en": "Highly proficient in Photoshop, Pixelmator, Figma, DaVinci Resolve, Final Cut Pro, Keynote and PowerPoint, producing content quickly and to a high standard",
+      "detail_zh": "精通 Photoshop、Pixelmator、Figma、DaVinci Resolve、Final Cut Pro、Keynote 和 PowerPoint，能高效产出高质量内容"
+    },
+    {
+      "title_en": "Editorial",
+      "title_zh": "编辑与内容",
+      "detail_en": "News editing, creative writing, graphic design, video editing and AI-assisted production",
+      "detail_zh": "新闻编辑、创意写作、平面设计、视频剪辑与 AI 辅助内容制作"
     }
   ]
 }
